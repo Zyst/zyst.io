@@ -1,8 +1,10 @@
-## Bernardo Pacheco website
+## Erick Romero blog
 
-* Site: [bernardopacheco.net](http://bernardopacheco.net)
+* Site: [blog.erick-romero.com](http://blog.erick-romero.com)
 
-If you are interested in making your blog from this project, check out how [I made my blog with GitHub, Jekyll and Material Design](http://bernardopacheco.net/how-i-made-my-blog-with-github-jekyll-and-material-design/) post.
+Cloned from the excelent Blog project made by Bernardo Pacheco! Great stuff. I'll use this as my blog.
+
+-----------------
 
 > Please, feel free to learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Bernardo Pacheco.
 
