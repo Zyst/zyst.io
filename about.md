@@ -5,22 +5,24 @@ permalink: /about/
 ---
 # About
 
-My name is Bernardo Pacheco. I'm a software engineer living and working at [Dot Legend][5] in Rio de Janeiro, Brazil.
+Hello there! I'm Erick Romero, I work at [iSAP Technologies][1] as the company Lead Software Developer.
 
-I’ve attended the [Federal University of Rio de Janeiro (UFRJ)][1] for a bachelor's degree and a master's degree in Computer Science.
+I’m finishing up University at [Tecmilenio][2]
 
-Currently I am involved with the full-stack JavaScript developing web and mobile applications with technologies including HTML5, CSS, JavaScript, AngularJS, NodeJS and MongoDB. I’ve worked on different things already and I have experience in the .NET framework, C#, Entity Framework, ASP .NET MVC, SQL Server, Git and Mercurial. I use fish as my command line shell and my preferred editor is vim. 
+Experienced with JSF/JSP and more Recently Spring MVC and Spring Boot, online Mexican invoice systems compliant with SAT requirements, MEAN Stack development both on Front end and Back end, front end design and connection to RESTful backends mainly using AngularJS, and full Database encryption implementations for highly critical financial data.
 
-I have a great interest in cryptography. It is a fascinating area with a beautiful mathematics and with a history of amazing people.
+My current Goals are deepening my Scala knowledge, and continuing to contribute to the jHipster codebase, which I've recently fallen in love with.
 
-I like to share what I know. I appreciate who does the same.
+As for my hobbies, I like answering questions on Stack Overflow, playing videogames (Currently playing TERA), and I'm teaching myself piano in the downtime.
+
+I love learning, and also spreading the love once I find out something that could be a pain to find out otherwise, which is mostly what I'll be dropping in this blog.
 
 ## Contact
 
-If you want to get in touch with me you can email me on ![](/assets/images/email.png) or find me on [GitHub][2], [Twitter][3] or [Google+][4].
+If you want to get in touch with me you can email me at ![](/assets/images/email.png) or find me on [GitHub][5], [Twitter][3] or [Google+][4].
 
-[1]: http://www.ufrj.br/
-[2]: http://github.com/bernardopacheco
-[3]: http://twitter.com/BernardoPachec0
-[4]: https://plus.google.com/+BernardoPacheco0/posts
-[5]: http://www.dotlegend.net/
+[1]: http://isaptechnologies.com.mx/
+[2]: http://tecmilenio.mx/
+[3]: https://twitter.com/Zyst
+[4]: https://plus.google.com/u/0/+ErickRomero1/posts
+[5]: https://github.com/Zyst
