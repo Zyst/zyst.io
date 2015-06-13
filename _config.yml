@@ -34,8 +34,8 @@ share:
 facebook_app_id: 730635297031262
 
 # if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
-disqus_username: bernardopacheco
-disqus_api_key: o2szu05bLNqiXiRvqe2oFvIHYYVR24eVkQiGs5WHcj0VUnvF8GCqD9HQUZErwCe7
+disqus_username: Zyst
+disqus_api_key: XevSB05xjOsiMfk5GH5dJlnYnDcibrvPSSuJcpP6psLdR3BVlZ9XnHLw3w2IelSj
 disqus_recent_comments_to_display: 5
 
 # google analytics ID
