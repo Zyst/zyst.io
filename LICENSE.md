@@ -1,14 +1,4 @@
-## Bernardo Pacheco website
-
-* Site: [bernardopacheco.net](http://bernardopacheco.net)
-
-If you are interested in making your blog from this project, check out how [I made my blog with GitHub, Jekyll and Material Design](http://bernardopacheco.net/how-i-made-my-blog-with-github-jekyll-and-material-design/) post.
-
-> Please, feel free to learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Bernardo Pacheco.
-
-## License
-
-#### The MIT License (MIT)
+The MIT License (MIT)
 
 Copyright (c) 2014 Bernardo Pacheco
 
