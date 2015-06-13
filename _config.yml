@@ -39,7 +39,7 @@ disqus_api_key: XevSB05xjOsiMfk5GH5dJlnYnDcibrvPSSuJcpP6psLdR3BVlZ9XnHLw3w2IelSj
 disqus_recent_comments_to_display: 5
 
 # google analytics ID
-google_analytics_id: Tracking ID
+google_analytics_id: UA-64042757-1
 
 markdown: kramdown
 highlighter: pygments
