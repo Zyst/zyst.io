@@ -2,7 +2,7 @@
 author:
   name: Erick Romero
   description: Lead Software Developer
-  picture: /assets/images/avatar.jpg
+  picture: /assets/images/my-avatar.jpg
 
 # site description
 description: Thoughts and writings about software engineering by Erick Romero.
@@ -24,14 +24,14 @@ github_username: zyst
 
 # set true to include or false to exclude share option
 share:
-  twitter: false
+  twitter: true
   facebook: false
-  google_plus: false
+  google_plus: true
   linkedin: true
   disqus: true
 
 # if share.facebook is true, provide your facebook app id
-facebook_app_id: 730635297031262
+# facebook_app_id: 730635297031262
 
 # if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
 disqus_username: Zyst

@@ -1,18 +1,18 @@
 {
-  "name": "bernardopacheco",
-  "description": "Source code for Bernardo Pacheco website",
-  "author": "Bernardo Pacheco",
+  "name": "erickromero",
+  "description": "Source code for Erick Romero website",
+  "author": "Erick Romero",
   "version": "0.1.0",
-  "copyright": "2014",
-  "url": "http://bernardopacheco.net",
+  "copyright": "2015",
+  "url": "http://blog.erick-romero.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bernardopacheco/bernardopacheco.github.io.git"
+    "url": "https://github.com/Zyst/zyst.github.io.git"
   },
   "private": true,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bernardopacheco/bernardopacheco.github.io/issues"
+    "url": "https://github.com/Zyst/zyst.github.io/issues"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
