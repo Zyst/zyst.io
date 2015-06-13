@@ -1,17 +1,17 @@
 # your informations
 author:
-  name: Bernardo Pacheco
-  description: Software engineer
+  name: Erick Romero
+  description: Lead Software Developer
   picture: /assets/images/avatar.jpg
 
 # site description
-description: Thoughts and writings about software engineering by Bernardo Pacheco.
+description: Thoughts and writings about software engineering by Erick Romero.
 
 # site url
-url: http://bernardopacheco.net
+url: http://blog.erick-romero.com
 
 # site title
-title: Bernardo Pacheco
+title: Erick Romero
 
 # site version
 version: 1.0.0
@@ -20,13 +20,13 @@ version: 1.0.0
 paginate: 10
 
 # your github username
-github_username: bernardopacheco
+github_username: zyst
 
 # set true to include or false to exclude share option
 share:
-  twitter: true
-  facebook: true
-  google_plus: true
+  twitter: false
+  facebook: false
+  google_plus: false
   linkedin: true
   disqus: true
 
@@ -39,7 +39,7 @@ disqus_api_key: o2szu05bLNqiXiRvqe2oFvIHYYVR24eVkQiGs5WHcj0VUnvF8GCqD9HQUZErwCe7
 disqus_recent_comments_to_display: 5
 
 # google analytics ID
-google_analytics_id: UA-58186085-1
+google_analytics_id: Tracking ID
 
 markdown: kramdown
 highlighter: pygments
