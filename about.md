@@ -7,7 +7,7 @@ permalink: /about/
 
 Hello there! I'm Erick Romero, I work at [iSAP Technologies][1] as the company Lead Software Developer.
 
-I’m finishing up University at [Tecmilenio][2]
+I’m finishing up University at [Tecmilenio][2].
 
 Experienced with JSF/JSP and more Recently Spring MVC and Spring Boot, online Mexican invoice systems compliant with SAT requirements, MEAN Stack development both on Front end and Back end, front end design and connection to RESTful backends mainly using AngularJS, and full Database encryption implementations for highly critical financial data.
 
