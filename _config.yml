@@ -2,8 +2,7 @@
 title: My Blog
 email: erick.romero.dev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
+  I do ocassionally talk about software.
 baseurl: "/"
 url: "http://blog.erick-romero.com" # the base hostname & protocol for your site
 twitter_username: Zyst
