@@ -1,46 +1,13 @@
-# your informations
-author:
-  name: Erick Romero
-  description: Lead Software Developer
-  picture: /assets/images/avatar.jpg
+# Site settings
+title: Clean
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml.
+baseurl: "/clean" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# site description
-description: Thoughts and writings about software engineering by Erick Romero.
-
-# site url
-url: http://blog.erick-romero.com
-
-# site title
-title: Erick Romero
-
-# site version
-version: 1.0.0
-
-# number of posts per page
-paginate: 10
-
-# your github username
-github_username: zyst
-
-# set true to include or false to exclude share option
-share:
-  twitter: true
-  facebook: false
-  google_plus: true
-  linkedin: true
-  disqus: true
-
-# if share.facebook is true, provide your facebook app id
-# facebook_app_id: 730635297031262
-
-# if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
-disqus_username: Zyst
-disqus_api_key: XevSB05xjOsiMfk5GH5dJlnYnDcibrvPSSuJcpP6psLdR3BVlZ9XnHLw3w2IelSj
-disqus_recent_comments_to_display: 5
-
-# google analytics ID
-google_analytics_id: UA-64042757-1
-
+# Build settings
 markdown: kramdown
-highlighter: pygments
-exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
