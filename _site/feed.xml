@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Blog</title>
+    <title>Erick&#39;s Blog</title>
     <description>I do ocassionally talk about software
 </description>
     <link>http://blog.erick-romero.com//</link>
     <atom:link href="http://blog.erick-romero.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2015 13:35:13 -0600</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 13:35:13 -0600</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 15:34:28 -0600</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 15:34:28 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Why I&#39;m switching to C# from Java</title>
+        <description>&lt;p&gt;I’ve been developing with Java for around 8 years now. And professionally I’ve found myself mostly doing Web development.&lt;/p&gt;
+
+&lt;p&gt;Java is a great language for developing web applications. This post is not intended to bash the language. So, why am I leaving?&lt;/p&gt;
+
+&lt;h2 id=&quot;you-already-know-c&quot;&gt;1.- You already know C#&lt;/h2&gt;
+
+&lt;p&gt;So you are coming from Java, and want to learn C#. You prepare yourself for a transition you have grown accustomed to when adopting a new language, you clench your teeth and open a book.&lt;/p&gt;
+
+&lt;p&gt;Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite comming. C# and Java are basically the same language.&lt;/p&gt;
+
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+
+&lt;p&gt;Getters and setters in Java&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;n&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Getters and setters in C#&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Interface declaration and implementation in Java&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;travel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Mammal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;implements&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Mammal eats&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+   &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;travel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Mammal travels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; 
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Interface declaration and implementation in C#&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAnimal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;travel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Mammal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAnimal&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Mammal eats&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;travel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Mammal travels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly unexistant.&lt;/p&gt;
+
+&lt;h2 id=&quot;aspnet-lets-you-optionally-skip-a-lot-of-the-boring-stuff&quot;&gt;2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.&lt;/h2&gt;
+
+&lt;p&gt;The level of code provided to you when you start a new ASP.NET project is amazing. You start and you already have a working login system, you have links to set up optional stuff like Google/Facebook authentication, you have links to setup two factor authentication. Everything is just given to you.&lt;/p&gt;
+
+&lt;p&gt;After a few years of developing with Java I don’t think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it’s not going to be the language standard. You are not going to be able to use this everywhere.&lt;/p&gt;
+
+&lt;p&gt;But with ASP.NET this is the language standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running, you can just develop.&lt;/p&gt;
+
+&lt;p&gt;Then there’s the Entity Framework. Hibernate is pretty similar, and so is NHibernate. No particular advantage to be gained there, but then you get to the scaffolding.&lt;/p&gt;
+
+&lt;p&gt;Once you start using scaffolding in your project (This being in an MVC context) Visual Studio grabs the Model, and automatically generates a CQRS Controller and View. It’s amazing how fast everything becomes with this.&lt;/p&gt;
+
+&lt;p&gt;What I’m trying to say is: It frees you from the most mundane and repetitive aspects of programming and just lets you code.&lt;/p&gt;
+
+&lt;p&gt;The only thing similar to this that I’ve seen is the &lt;a href=&quot;https://jhipster.github.io/&quot;&gt;jHipster&lt;/a&gt; code generation tool.&lt;/p&gt;
+
+&lt;p&gt;Essentially, ASP.NET made programming incredibly fun. It lets me concentrate my efforts into crafting my application logic, freeing me from repeating the same code I’ve written so many times in a per-project basis.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-java-web-future-is-a-black-box&quot;&gt;3.- The Java web future is a black box&lt;/h2&gt;
+
+&lt;p&gt;Java is incredibly extensible. That is one of its main selling points, you can do almost anything with Java, and someone has probably done a Library that does it for you anyway.&lt;/p&gt;
+
+&lt;p&gt;The problem for me was, that there are just too many options.&lt;/p&gt;
+
+&lt;p&gt;Currently with a brief job search I found job postings for the following Java web frameworks: &lt;a href=&quot;https://struts.apache.org/&quot;&gt;Struts&lt;/a&gt;, &lt;a href=&quot;https://spring.io/&quot;&gt;Spring&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaServer_Pages&quot;&gt;JSP&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaServer_Faces&quot;&gt;JSF&lt;/a&gt;, &lt;a href=&quot;https://www.playframework.com/&quot;&gt;Play&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So there’s many variables in play, although arguably currently JSF and Spring dominate the market. The problem with this is that a few years ago JSP was the top technology, and Java web frameworks are constantly cycling, constantly eating the share of another. And everytime this happens you have to learn a new framework. Albeit, the cycle in Java is graciously slow compared to Javascript where you might find yourself learning a new framework every year.&lt;/p&gt;
+
+&lt;p&gt;“Learning new stuff is great though”, you might be telling yourself. discarding this post as the rant of a lazy programmer.&lt;/p&gt;
+
+&lt;p&gt;Learning new stuff is great, I love learning. Thing is, when you learn something in programming you are taking a gamble. At least when you learn something and try to take it to a deep level you take a gamble, where you invest your time and you hope it pays off. And at some point I figured: “If I keep going this way in 10 years I might not be a Spring Architect with 10 years experience, I will be a X-NewTechnology 3 year Senior”.&lt;/p&gt;
+
+&lt;p&gt;ASP.NET seems different. There are people today with 10 years of experience in ASP.NET. Sure, the things they do have changed to Web Pages, MVC, and Web APIs. But it’s still all familiar ASP.NET, you are not learning the nuances, notations, and inner workings of a completely different platform, you are just learning different things. And odds are, ASP.NET is gonna stay the C# web framework of choice for the foreseeable future.&lt;/p&gt;
+
+&lt;p&gt;Who knows, maybe I’m wrong and Spring will keep being the most popular choice 5 or 10 years from now, and all my worries will have been for nothing. However that is not a bet I should be taking with my livelyhood on the line.&lt;/p&gt;
+
+&lt;p&gt;I will keep learning, I hopefully will always want to keep learning, and I have a blast learning Javascript frameworks, This year alone I learned &lt;a href=&quot;https://www.meteor.com/&quot;&gt;Meteor&lt;/a&gt;, &lt;a href=&quot;http://emberjs.com/&quot;&gt;EmberJS&lt;/a&gt;, and &lt;a href=&quot;https://github.com/Netflix/falcor&quot;&gt;Falcor&lt;/a&gt;. I also am constantly learning new incredible stuff with Scala. I can take small gambles with other stuff for fun, but I want a safe port where I can return after a long night at sea. And C# really seems to be it.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 27 Oct 2015 00:00:00 -0600</pubDate>
+        <link>http://blog.erick-romero.com//why-im-switching-to-c-sharp-from-Java</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//why-im-switching-to-c-sharp-from-Java</guid>
+        
+        
+      </item>
     
       <item>
         <title>Remove the sidebar in the Clearly extension/addon</title>

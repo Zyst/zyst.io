@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Why I'm switching to C# from Java</title>
+  <meta name="description" content="I’ve been developing with Java for around 8 years now. And professionally I’ve found myself mostly doing Web development.">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.erick-romero.com/why-im-switching-to-c-sharp-from-Java">
+  <link rel="alternate" type="application/rss+xml" title="Erick's Blog" href="http://blog.erick-romero.com/feed.xml" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="http://blog.erick-romero.com/">Erick's Blog</a>
+
+    <nav class="site-nav">
+        
+          
+          <a class="page-link" href="http://blog.erick-romero.com/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Why I'm switching to C# from Java</h1>
+    <p class="post-meta">Oct 27, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I’ve been developing with Java for around 8 years now. And professionally I’ve found myself mostly doing Web development.</p>
+
+<p>Java is a great language for developing web applications. This post is not intended to bash the language. So, why am I leaving?</p>
+
+<h2 id="you-already-know-c">1.- You already know C#</h2>
+
+<p>So you are coming from Java, and want to learn C#. You prepare yourself for a transition you have grown accustomed to when adopting a new language, you clench your teeth and open a book.</p>
+
+<p>Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite comming. C# and Java are basically the same language.</p>
+
+<p>Here are some examples:</p>
+
+<p>Getters and setters in Java</p>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">private</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">name</span><span class="p">;</span><span class="x">
+
+</span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">setName</span><span class="p">(</span><span class="kt">string</span><span class="x"> </span><span class="n">name</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
+   </span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">name</span><span class="p">;</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span><span class="n">public</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">getName</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
+   </span><span class="k">return</span><span class="x"> </span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">;</span><span class="x">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Getters and setters in C#</p>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">public</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">Name</span><span class="x"> </span><span class="p">{</span><span class="x"> </span><span class="n">get</span><span class="p">;</span><span class="x"> </span><span class="n">set</span><span class="p">;</span><span class="x"> </span><span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>Interface declaration and implementation in Java</p>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">interface</span><span class="x"> </span><span class="n">Animal</span><span class="x"> </span><span class="p">{</span><span class="x">
+   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">();</span><span class="x">
+   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">();</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span><span class="n">public</span><span class="x"> </span><span class="n">class</span><span class="x"> </span><span class="n">Mammal</span><span class="x"> </span><span class="n">implements</span><span class="x"> </span><span class="n">Animal</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">(){</span><span class="x">
+      </span><span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="nb">println</span><span class="p">(</span><span class="s">"Mammal eats"</span><span class="p">);</span><span class="x">
+   </span><span class="p">}</span><span class="x">
+
+   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">(){</span><span class="x">
+      </span><span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="nb">println</span><span class="p">(</span><span class="s">"Mammal travels"</span><span class="p">);</span><span class="x">
+   </span><span class="p">}</span><span class="x"> 
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Interface declaration and implementation in C#</p>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">interface</span><span class="x"> </span><span class="n">IAnimal</span><span class="x">
+</span><span class="p">{</span><span class="x">
+    </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">();</span><span class="x">
+    </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">();</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span><span class="n">class</span><span class="x"> </span><span class="n">Mammal</span><span class="x"> </span><span class="o">:</span><span class="x"> </span><span class="n">IAnimal</span><span class="x">
+</span><span class="p">{</span><span class="x">
+    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">()</span><span class="x">
+    </span><span class="p">{</span><span class="x">
+        </span><span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Mammal eats"</span><span class="p">);</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+
+    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">()</span><span class="x">
+    </span><span class="p">{</span><span class="x">
+        </span><span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Mammal travels"</span><span class="p">);</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly unexistant.</p>
+
+<h2 id="aspnet-lets-you-optionally-skip-a-lot-of-the-boring-stuff">2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.</h2>
+
+<p>The level of code provided to you when you start a new ASP.NET project is amazing. You start and you already have a working login system, you have links to set up optional stuff like Google/Facebook authentication, you have links to setup two factor authentication. Everything is just given to you.</p>
+
+<p>After a few years of developing with Java I don’t think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it’s not going to be the language standard. You are not going to be able to use this everywhere.</p>
+
+<p>But with ASP.NET this is the language standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running, you can just develop.</p>
+
+<p>Then there’s the Entity Framework. Hibernate is pretty similar, and so is NHibernate. No particular advantage to be gained there, but then you get to the scaffolding.</p>
+
+<p>Once you start using scaffolding in your project (This being in an MVC context) Visual Studio grabs the Model, and automatically generates a CQRS Controller and View. It’s amazing how fast everything becomes with this.</p>
+
+<p>What I’m trying to say is: It frees you from the most mundane and repetitive aspects of programming and just lets you code.</p>
+
+<p>The only thing similar to this that I’ve seen is the <a href="https://jhipster.github.io/">jHipster</a> code generation tool.</p>
+
+<p>Essentially, ASP.NET made programming incredibly fun. It lets me concentrate my efforts into crafting my application logic, freeing me from repeating the same code I’ve written so many times in a per-project basis.</p>
+
+<h2 id="the-java-web-future-is-a-black-box">3.- The Java web future is a black box</h2>
+
+<p>Java is incredibly extensible. That is one of its main selling points, you can do almost anything with Java, and someone has probably done a Library that does it for you anyway.</p>
+
+<p>The problem for me was, that there are just too many options.</p>
+
+<p>Currently with a brief job search I found job postings for the following Java web frameworks: <a href="https://struts.apache.org/">Struts</a>, <a href="https://spring.io/">Spring</a>, <a href="https://en.wikipedia.org/wiki/JavaServer_Pages">JSP</a>, <a href="https://en.wikipedia.org/wiki/JavaServer_Faces">JSF</a>, <a href="https://www.playframework.com/">Play</a>.</p>
+
+<p>So there’s many variables in play, although arguably currently JSF and Spring dominate the market. The problem with this is that a few years ago JSP was the top technology, and Java web frameworks are constantly cycling, constantly eating the share of another. And everytime this happens you have to learn a new framework. Albeit, the cycle in Java is graciously slow compared to Javascript where you might find yourself learning a new framework every year.</p>
+
+<p>“Learning new stuff is great though”, you might be telling yourself. discarding this post as the rant of a lazy programmer.</p>
+
+<p>Learning new stuff is great, I love learning. Thing is, when you learn something in programming you are taking a gamble. At least when you learn something and try to take it to a deep level you take a gamble, where you invest your time and you hope it pays off. And at some point I figured: “If I keep going this way in 10 years I might not be a Spring Architect with 10 years experience, I will be a X-NewTechnology 3 year Senior”.</p>
+
+<p>ASP.NET seems different. There are people today with 10 years of experience in ASP.NET. Sure, the things they do have changed to Web Pages, MVC, and Web APIs. But it’s still all familiar ASP.NET, you are not learning the nuances, notations, and inner workings of a completely different platform, you are just learning different things. And odds are, ASP.NET is gonna stay the C# web framework of choice for the foreseeable future.</p>
+
+<p>Who knows, maybe I’m wrong and Spring will keep being the most popular choice 5 or 10 years from now, and all my worries will have been for nothing. However that is not a bet I should be taking with my livelyhood on the line.</p>
+
+<p>I will keep learning, I hopefully will always want to keep learning, and I have a blast learning Javascript frameworks, This year alone I learned <a href="https://www.meteor.com/">Meteor</a>, <a href="http://emberjs.com/">EmberJS</a>, and <a href="https://github.com/Netflix/falcor">Falcor</a>. I also am constantly learning new incredible stuff with Scala. I can take small gambles with other stuff for fun, but I want a safe port where I can return after a long night at sea. And C# really seems to be it.</p>
+
+
+  </article>
+
+</div>
+
+    </div>
+
+  </body>
+
+</html>
