@@ -20,7 +20,7 @@ I love learning, and also spreading the love once I find out something that coul
 
 ## Contact
 
-If you want to get in touch with me you can email me at ![](/assets/images/email.png) or find me on [GitHub][3], or [LinkedIn][4].
+If you want to get in touch with me you can email me at ![](/assets/images/email.png) and you can also find me on [GitHub][3], and [LinkedIn][4].
 
 [1]: http://iris-apps.mx/
 [2]: http://tecmilenio.mx/
