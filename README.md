@@ -2,17 +2,13 @@
 
 * Site: [blog.erick-romero.com](http://blog.erick-romero.com)
 
-Cloned from the excelent Blog project made by Bernardo Pacheco! Great stuff. I'll use this as my blog.
-
------------------
-
-> Please, feel free to learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Bernardo Pacheco.
+My blog, it is a mix of two amazing Jekyll themes, [Kiko](https://github.com/knaman2609/clean) and [Clean](https://github.com/knaman2609/clean) 
 
 ## License
 
 #### The MIT License (MIT)
 
-Copyright (c) 2014 Bernardo Pacheco
+Copyright (c) 2015 Erick Romero
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
