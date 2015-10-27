@@ -81,15 +81,15 @@ class Mammal : IAnimal
 }
 {% endhighlight %}
 
-The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly unexistant.
+The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly non-existant.
 
 ##2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.
 
 The level of code provided to you when you start a new ASP.NET project is amazing. You start and you already have a working login system, you have links to set up optional stuff like Google/Facebook authentication, you have links to setup two factor authentication. Everything is just given to you.
 
-After a few years of developing with Java I don't think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it's not going to be the language standard. You are not going to be able to use this everywhere. 
+After a few years of developing with Java I don't think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it's not going to be the language or framework standard. You are not going to be able to use this everywhere. 
 
-But with ASP.NET this is the language standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running, you can just develop.
+But with ASP.NET this is the standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running. **You can just develop**.
 
 Then there's the Entity Framework. Hibernate is pretty similar, and so is NHibernate. No particular advantage to be gained there, but then you get to the scaffolding.
 
