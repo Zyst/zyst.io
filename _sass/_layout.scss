@@ -267,9 +267,6 @@
     text-align: right;
     position: relative;
     height: 100%;
-    @include media-query($on-mobile) {
-            text-align: center;
-    }
 }
 
 .site-name__inner {
