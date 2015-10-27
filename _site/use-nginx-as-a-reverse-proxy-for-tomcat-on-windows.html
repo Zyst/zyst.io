@@ -63,17 +63,16 @@
 
 <p><strong>nginx.conf</strong></p>
 
-<pre><code>worker_processes  1;
-events {
-    worker_connections  1024;
-}
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">worker_processes</span><span class="x">  </span><span class="m">1</span><span class="p">;</span><span class="x">
+</span><span class="n">events</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">worker_connections</span><span class="x">  </span><span class="m">1024</span><span class="p">;</span><span class="x">
+</span><span class="p">}</span><span class="x">
 
-http {
-    include       mime.types;
-    default_type  application/octet-stream;
-    include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
-}
-</code></pre>
+</span><span class="n">http</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">include</span><span class="x">       </span><span class="n">mime</span><span class="o">.</span><span class="n">types</span><span class="p">;</span><span class="x">
+    </span><span class="n">default_type</span><span class="x">  </span><span class="n">application</span><span class="o">/</span><span class="n">octet</span><span class="o">-</span><span class="n">stream</span><span class="p">;</span><span class="x">
+    </span><span class="n">include</span><span class="x"> </span><span class="n">C</span><span class="o">:/</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">nginx</span><span class="o">/</span><span class="n">nginx</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">sites</span><span class="o">-</span><span class="n">enabled</span><span class="o">/*.</span><span class="n">conf</span><span class="p">;</span><span class="x">
+</span><span class="p">}</span></code></pre></figure>
 
 <p>Note the <code>path-to-nginx</code> above, make sure to replace that with the actual path to your nginx folder.</p>
 
@@ -81,35 +80,22 @@ http {
 
 <p><strong>erick-romero.conf</strong></p>
 
-<pre><code>server {
-    server_name  erick-romero.com;
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">server</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">server_name</span><span class="x">  </span><span class="n">erick</span><span class="o">-</span><span class="n">romero</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="x">
 
-    location / {
-        proxy_set_header X-Forwarded-Host $host;
-        proxy_set_header X-Forwarded-Server $host;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://localhost:8080;
-    }
-}
-</code></pre>
+    </span><span class="n">location</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="p">{</span><span class="x">
+        </span><span class="n">proxy_set_header</span><span class="x"> </span><span class="n">X</span><span class="o">-</span><span class="n">Forwarded</span><span class="o">-</span><span class="n">Host</span><span class="x"> </span><span class="err">$</span><span class="n">host</span><span class="p">;</span><span class="x">
+        </span><span class="n">proxy_set_header</span><span class="x"> </span><span class="n">X</span><span class="o">-</span><span class="n">Forwarded</span><span class="o">-</span><span class="n">Server</span><span class="x"> </span><span class="err">$</span><span class="n">host</span><span class="p">;</span><span class="x">
+        </span><span class="n">proxy_set_header</span><span class="x"> </span><span class="n">X</span><span class="o">-</span><span class="n">Forwarded</span><span class="o">-</span><span class="n">For</span><span class="x"> </span><span class="err">$</span><span class="n">proxy_add_x_forwarded_for</span><span class="p">;</span><span class="x">
+        </span><span class="n">proxy_pass</span><span class="x"> </span><span class="n">http</span><span class="o">:</span><span class="c">//localhost:8080;</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+</span><span class="p">}</span></code></pre></figure>
 
 <p>Inside the above file make sure you change your <code>server_name</code> to your domain name and <code>http://localhost:8080</code> to use the port you use on your Tomcat application, then deploy your Tomcat application.</p>
 
 <p>Go to the root of your nginx application and run the <code>nginx.exe</code> file as administrator. You can also travel to that folder with your Command Line/Powershell and type <code>start nginx</code>, both will work.</p>
 
 <p>If you have done everything correctly your application should now be running! Congratulations.</p>
-
-<hr />
-
-<p>References:</p>
-
-<p>http://www.mkyong.com/nginx/nginx-apache-tomcat-configuration-example/</p>
-
-<p>http://javadeveloper.asia/configuring-nginx-in-front-of-tomcat-or-other-java-application-server</p>
-
-<p>http://nginx.org/en/docs/windows.html</p>
-
-<p>https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs</p>
 
 
   </article>

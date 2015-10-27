@@ -14,16 +14,18 @@ After unzipping the file go into the `nginx/conf/nginx.conf` file and remove the
 
 **nginx.conf**
 
-    worker_processes  1;
-    events {
-        worker_connections  1024;
-    }
-    
-    http {
-        include       mime.types;
-        default_type  application/octet-stream;
-        include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
-    }
+{% highlight go %}
+worker_processes  1;
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
+}
+{% endhighlight %}
 
 Note the `path-to-nginx` above, make sure to replace that with the actual path to your nginx folder.
 
@@ -31,35 +33,24 @@ After that create a folder called `sites-enabled` in `nginx/conf/sites-enabled`.
 
 **erick-romero.conf**
 
+{% highlight go %}
+server {
+    server_name  erick-romero.com;
 
-    server {
-        server_name  erick-romero.com;
-    
-        location / {
-            proxy_set_header X-Forwarded-Host $host;
-            proxy_set_header X-Forwarded-Server $host;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_pass http://localhost:8080;
-        }
+    location / {
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://localhost:8080;
     }
+}
+{% endhighlight %}
 
 Inside the above file make sure you change your `server_name` to your domain name and `http://localhost:8080` to use the port you use on your Tomcat application, then deploy your Tomcat application.
 
 Go to the root of your nginx application and run the `nginx.exe` file as administrator. You can also travel to that folder with your Command Line/Powershell and type `start nginx`, both will work.
 
 If you have done everything correctly your application should now be running! Congratulations.
-
------------------
-
-References:
-
-http://www.mkyong.com/nginx/nginx-apache-tomcat-configuration-example/
-
-http://javadeveloper.asia/configuring-nginx-in-front-of-tomcat-or-other-java-application-server
-
-http://nginx.org/en/docs/windows.html
-
-https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs
 
 [1]: https://wiki.gandi.net/en/dns
 [2]: http://nginx.org/en/download.html

@@ -61,21 +61,18 @@
 
 <p><em>pom.xml</em></p>
 
-<pre><code>[...]
-&lt;!-- Microsoft JDBC --&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.microsoft.sqlserver&lt;/groupId&gt;
-    &lt;artifactId&gt;sqljdbc41&lt;/artifactId&gt;
-    &lt;version&gt;4.1&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;!-- Liquibase MS SQL Server extensions --&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.github.sabomichal&lt;/groupId&gt;
-    &lt;artifactId&gt;liquibase-mssql&lt;/artifactId&gt;
-    &lt;version&gt;1.4&lt;/version&gt;
-&lt;/dependency&gt;
-[...]
-</code></pre>
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="o">&lt;!--</span><span class="x"> </span><span class="n">Microsoft</span><span class="x"> </span><span class="n">JDBC</span><span class="x"> </span><span class="o">--&gt;</span><span class="x">
+</span><span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">com</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">sqlserver</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">sqljdbc41</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="m">4.1</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span><span class="x">
+</span><span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span><span class="x">
+</span><span class="o">&lt;!--</span><span class="x"> </span><span class="n">Liquibase</span><span class="x"> </span><span class="n">MS</span><span class="x"> </span><span class="n">SQL</span><span class="x"> </span><span class="n">Server</span><span class="x"> </span><span class="n">extensions</span><span class="x"> </span><span class="o">--&gt;</span><span class="x">
+</span><span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">com</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">sabomichal</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">liquibase</span><span class="o">-</span><span class="n">mssql</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="m">1.4</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span><span class="x">
+</span><span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span></code></pre></figure>
 
 <p>I am using Sql JDBC 4.1, and already have it installed to my personal repository, but if you do not this will not work without some further configuration, check out <a href="https://stackoverflow.com/questions/30207842/add-external-library-jar-to-spring-boot-jar-internal-lib">this</a> stackoverflow question for further reference.</p>
 
@@ -87,30 +84,29 @@
 
 <p><em>application-dev.yml</em></p>
 
-<pre><code>spring:
-    profiles:
-        active: dev
-    datasource:
-        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-        dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
-        url: jdbc:sqlserver://localhost:1433;databaseName=test
-        databaseName:
-        serverName:
-        username: myuser
-        password: supersecretpassword
-        cachePrepStmts: true
-        prepStmtCacheSize: 250
-        prepStmtCacheSqlLimit: 2048
-        useServerPrepStmts: true
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">spring</span><span class="o">:</span><span class="x">
+    </span><span class="n">profiles</span><span class="o">:</span><span class="x">
+        </span><span class="n">active</span><span class="o">:</span><span class="x"> </span><span class="n">dev</span><span class="x">
+    </span><span class="n">datasource</span><span class="o">:</span><span class="x">
+        </span><span class="n">driverClassName</span><span class="o">:</span><span class="x"> </span><span class="n">com</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">sqlserver</span><span class="o">.</span><span class="n">jdbc</span><span class="o">.</span><span class="n">SQLServerDriver</span><span class="x">
+        </span><span class="n">dataSourceClassName</span><span class="o">:</span><span class="x"> </span><span class="n">com</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">sqlserver</span><span class="o">.</span><span class="n">jdbc</span><span class="o">.</span><span class="n">SQLServerDataSource</span><span class="x">
+        </span><span class="n">url</span><span class="o">:</span><span class="x"> </span><span class="n">jdbc</span><span class="o">:</span><span class="n">sqlserver</span><span class="o">:</span><span class="c">//localhost:1433;databaseName=test</span><span class="x">
+        </span><span class="n">databaseName</span><span class="o">:</span><span class="x">
+        </span><span class="n">serverName</span><span class="o">:</span><span class="x">
+        </span><span class="n">username</span><span class="o">:</span><span class="x"> </span><span class="n">myuser</span><span class="x">
+        </span><span class="n">password</span><span class="o">:</span><span class="x"> </span><span class="n">supersecretpassword</span><span class="x">
+        </span><span class="n">cachePrepStmts</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
+        </span><span class="n">prepStmtCacheSize</span><span class="o">:</span><span class="x"> </span><span class="m">250</span><span class="x">
+        </span><span class="n">prepStmtCacheSqlLimit</span><span class="o">:</span><span class="x"> </span><span class="m">2048</span><span class="x">
+        </span><span class="n">useServerPrepStmts</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
 
-    jpa:
-        database-platform: org.hibernate.dialect.SQLServerDialect
-        database: SQL_SERVER
-        openInView: false
-        show_sql: true
-        generate-ddl: false
-        [...]
-</code></pre>
+    </span><span class="n">jpa</span><span class="o">:</span><span class="x">
+        </span><span class="n">database</span><span class="o">-</span><span class="n">platform</span><span class="o">:</span><span class="x"> </span><span class="n">org</span><span class="o">.</span><span class="n">hibernate</span><span class="o">.</span><span class="n">dialect</span><span class="o">.</span><span class="n">SQLServerDialect</span><span class="x">
+        </span><span class="n">database</span><span class="o">:</span><span class="x"> </span><span class="n">SQL_SERVER</span><span class="x">
+        </span><span class="n">openInView</span><span class="o">:</span><span class="x"> </span><span class="no">false</span><span class="x">
+        </span><span class="n">show_sql</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
+        </span><span class="n">generate</span><span class="o">-</span><span class="n">ddl</span><span class="o">:</span><span class="x"> </span><span class="no">false</span><span class="x">
+        </span><span class="p">[</span><span class="o">...</span><span class="p">]</span></code></pre></figure>
 
 <p>This assuming your database is called <code>test</code>, change your connection url as necessary.</p>
 
@@ -118,48 +114,46 @@
 
 <p><em>00000000000000_initial_schema.xml</em></p>
 
-<pre><code>&lt;databaseChangeLog
-    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
-    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"&gt;
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="o">&lt;</span><span class="n">databaseChangeLog</span><span class="x">
+    </span><span class="n">xmlns</span><span class="o">=</span><span class="s">"http://www.liquibase.org/xml/ns/dbchangelog"</span><span class="x">
+    </span><span class="n">xmlns</span><span class="o">:</span><span class="n">ext</span><span class="o">=</span><span class="s">"http://www.liquibase.org/xml/ns/dbchangelog-ext"</span><span class="x">
+    </span><span class="n">xmlns</span><span class="o">:</span><span class="n">xsi</span><span class="o">=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="x">
+    </span><span class="n">xsi</span><span class="o">:</span><span class="n">schemaLocation</span><span class="o">=</span><span class="s">"http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"</span><span class="o">&gt;</span><span class="x">
 
-    &lt;property name="now" value="now()" dbms="mysql,h2"/&gt;
-    &lt;property name="now" value="current_timestamp" dbms="postgresql"/&gt;
-    &lt;property name="now" value="GETDATE()" dbms="mssql"/&gt;
+    </span><span class="o">&lt;</span><span class="n">property</span><span class="x"> </span><span class="n">name</span><span class="o">=</span><span class="s">"now"</span><span class="x"> </span><span class="n">value</span><span class="o">=</span><span class="s">"now()"</span><span class="x"> </span><span class="n">dbms</span><span class="o">=</span><span class="s">"mysql,h2"</span><span class="o">/&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">property</span><span class="x"> </span><span class="n">name</span><span class="o">=</span><span class="s">"now"</span><span class="x"> </span><span class="n">value</span><span class="o">=</span><span class="s">"current_timestamp"</span><span class="x"> </span><span class="n">dbms</span><span class="o">=</span><span class="s">"postgresql"</span><span class="o">/&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">property</span><span class="x"> </span><span class="n">name</span><span class="o">=</span><span class="s">"now"</span><span class="x"> </span><span class="n">value</span><span class="o">=</span><span class="s">"GETDATE()"</span><span class="x"> </span><span class="n">dbms</span><span class="o">=</span><span class="s">"mssql"</span><span class="o">/&gt;</span><span class="x">
 
-    &lt;changeSet id="00000000000000" author="jhipster" dbms="postgresql"&gt;
-        &lt;createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="1"/&gt;
-    &lt;/changeSet&gt;
-    [...]
-</code></pre>
+    </span><span class="o">&lt;</span><span class="n">changeSet</span><span class="x"> </span><span class="n">id</span><span class="o">=</span><span class="s">"00000000000000"</span><span class="x"> </span><span class="n">author</span><span class="o">=</span><span class="s">"jhipster"</span><span class="x"> </span><span class="n">dbms</span><span class="o">=</span><span class="s">"postgresql"</span><span class="o">&gt;</span><span class="x">
+        </span><span class="o">&lt;</span><span class="n">createSequence</span><span class="x"> </span><span class="n">sequenceName</span><span class="o">=</span><span class="s">"hibernate_sequence"</span><span class="x"> </span><span class="n">startValue</span><span class="o">=</span><span class="s">"1000"</span><span class="x"> </span><span class="n">incrementBy</span><span class="o">=</span><span class="s">"1"</span><span class="o">/&gt;</span><span class="x">
+    </span><span class="o">&lt;/</span><span class="n">changeSet</span><span class="o">&gt;</span><span class="x">
+    </span><span class="p">[</span><span class="o">...</span><span class="p">]</span></code></pre></figure>
 
 <p>First, make sure you changed your xml databaseChangeLog property to include the ext. Now inside <code>src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml</code> find the data entries and change them:</p>
 
 <p><em>00000000000000_initial_schema.xml</em></p>
 
-<pre><code>&lt;ext:loadData encoding="UTF-8"
-          file="config/liquibase/users.csv"
-          separator=";"
-          tableName="JHI_USER" identityInsertEnabled="true"&gt;
-    &lt;column name="activated" type="boolean"/&gt;
-    &lt;column name="created_date" type="timestamp"/&gt;
-&lt;/ext:loadData&gt;
-&lt;dropDefaultValue tableName="JHI_USER" columnName="created_date" columnDataType="datetime"/&gt;
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="o">&lt;</span><span class="n">ext</span><span class="o">:</span><span class="n">loadData</span><span class="x"> </span><span class="n">encoding</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="x">
+            </span><span class="n">file</span><span class="o">=</span><span class="s">"config/liquibase/users.csv"</span><span class="x">
+            </span><span class="n">separator</span><span class="o">=</span><span class="s">";"</span><span class="x">
+            </span><span class="n">tableName</span><span class="o">=</span><span class="s">"JHI_USER"</span><span class="x"> </span><span class="n">identityInsertEnabled</span><span class="o">=</span><span class="s">"true"</span><span class="o">&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">column</span><span class="x"> </span><span class="n">name</span><span class="o">=</span><span class="s">"activated"</span><span class="x"> </span><span class="k">type</span><span class="o">=</span><span class="s">"boolean"</span><span class="o">/&gt;</span><span class="x">
+    </span><span class="o">&lt;</span><span class="n">column</span><span class="x"> </span><span class="n">name</span><span class="o">=</span><span class="s">"created_date"</span><span class="x"> </span><span class="k">type</span><span class="o">=</span><span class="s">"timestamp"</span><span class="o">/&gt;</span><span class="x">
+</span><span class="o">&lt;/</span><span class="n">ext</span><span class="o">:</span><span class="n">loadData</span><span class="o">&gt;</span><span class="x">
+</span><span class="o">&lt;</span><span class="n">dropDefaultValue</span><span class="x"> </span><span class="n">tableName</span><span class="o">=</span><span class="s">"JHI_USER"</span><span class="x"> </span><span class="n">columnName</span><span class="o">=</span><span class="s">"created_date"</span><span class="x"> </span><span class="n">columnDataType</span><span class="o">=</span><span class="s">"datetime"</span><span class="o">/&gt;</span><span class="x">
 
-&lt;ext:loadData encoding="UTF-8"
-              file="config/liquibase/authorities.csv"
-              separator=";"
-              tableName="JHI_AUTHORITY"
-              identityInsertEnabled="true" /&gt;
+</span><span class="o">&lt;</span><span class="n">ext</span><span class="o">:</span><span class="n">loadData</span><span class="x"> </span><span class="n">encoding</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="x">
+                </span><span class="n">file</span><span class="o">=</span><span class="s">"config/liquibase/authorities.csv"</span><span class="x">
+                </span><span class="n">separator</span><span class="o">=</span><span class="s">";"</span><span class="x">
+                </span><span class="n">tableName</span><span class="o">=</span><span class="s">"JHI_AUTHORITY"</span><span class="x">
+                </span><span class="n">identityInsertEnabled</span><span class="o">=</span><span class="s">"true"</span><span class="x"> </span><span class="o">/&gt;</span><span class="x">
 
-&lt;ext:loadData encoding="UTF-8"
-              file="config/liquibase/users_authorities.csv"
-              separator=";"
-              tableName="JHI_USER_AUTHORITY"
-              identityInsertEnabled="true" /&gt;
-</code></pre>
+</span><span class="o">&lt;</span><span class="n">ext</span><span class="o">:</span><span class="n">loadData</span><span class="x"> </span><span class="n">encoding</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="x">
+                </span><span class="n">file</span><span class="o">=</span><span class="s">"config/liquibase/users_authorities.csv"</span><span class="x">
+                </span><span class="n">separator</span><span class="o">=</span><span class="s">";"</span><span class="x">
+                </span><span class="n">tableName</span><span class="o">=</span><span class="s">"JHI_USER_AUTHORITY"</span><span class="x">
+                </span><span class="n">identityInsertEnabled</span><span class="o">=</span><span class="s">"true"</span><span class="x"> </span><span class="o">/&gt;</span></code></pre></figure>
 
 <p>Adding the <code>identityInsertEnabled="true"</code> is the same as wrapping your Inserts with <code>IDENTITY_INSERT ON</code> and <code>IDENTITY_INSERT OFF</code> which will allow you to insert the project autogenerated identities directly. This is why we are using the MS SQL Server Liquibase for.</p>
 

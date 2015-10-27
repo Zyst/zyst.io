@@ -12,20 +12,20 @@ We then add the MS SQL Server JDBC dependency to the project `pom.xml` file.
 
 _pom.xml_
 
-    [...]
-    <!-- Microsoft JDBC -->
-    <dependency>
-        <groupId>com.microsoft.sqlserver</groupId>
-        <artifactId>sqljdbc41</artifactId>
-        <version>4.1</version>
-    </dependency>
-    <!-- Liquibase MS SQL Server extensions -->
-    <dependency>
-        <groupId>com.github.sabomichal</groupId>
-        <artifactId>liquibase-mssql</artifactId>
-        <version>1.4</version>
-    </dependency>
-    [...]
+{% highlight go %}
+<!-- Microsoft JDBC -->
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>sqljdbc41</artifactId>
+    <version>4.1</version>
+</dependency>
+<!-- Liquibase MS SQL Server extensions -->
+<dependency>
+    <groupId>com.github.sabomichal</groupId>
+    <artifactId>liquibase-mssql</artifactId>
+    <version>1.4</version>
+</dependency>
+{% endhighlight %}    
 
 I am using Sql JDBC 4.1, and already have it installed to my personal repository, but if you do not this will not work without some further configuration, check out [this](https://stackoverflow.com/questions/30207842/add-external-library-jar-to-spring-boot-jar-internal-lib) stackoverflow question for further reference.
 
@@ -37,29 +37,31 @@ Go into `src\main\resources\config\application-dev.yml` and change your applicat
 
 _application-dev.yml_
 
-    spring:
-        profiles:
-            active: dev
-        datasource:
-            driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-            dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
-            url: jdbc:sqlserver://localhost:1433;databaseName=test
-            databaseName:
-            serverName:
-            username: myuser
-            password: supersecretpassword
-            cachePrepStmts: true
-            prepStmtCacheSize: 250
-            prepStmtCacheSqlLimit: 2048
-            useServerPrepStmts: true
+{% highlight go %}
+spring:
+    profiles:
+        active: dev
+    datasource:
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+        url: jdbc:sqlserver://localhost:1433;databaseName=test
+        databaseName:
+        serverName:
+        username: myuser
+        password: supersecretpassword
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
 
-        jpa:
-            database-platform: org.hibernate.dialect.SQLServerDialect
-            database: SQL_SERVER
-            openInView: false
-            show_sql: true
-            generate-ddl: false
-            [...]
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServerDialect
+        database: SQL_SERVER
+        openInView: false
+        show_sql: true
+        generate-ddl: false
+        [...]
+{% endhighlight %}
 
 This assuming your database is called `test`, change your connection url as necessary.
 
@@ -67,46 +69,50 @@ Now go into `*\src\main\resources\config\liquibase\changelog\00000000000000_init
 
 _00000000000000_initial_schema.xml_
 
-    <databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
-        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+{% highlight go %}
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-        <property name="now" value="now()" dbms="mysql,h2"/>
-        <property name="now" value="current_timestamp" dbms="postgresql"/>
-        <property name="now" value="GETDATE()" dbms="mssql"/>
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="GETDATE()" dbms="mssql"/>
 
-        <changeSet id="00000000000000" author="jhipster" dbms="postgresql">
-            <createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="1"/>
-        </changeSet>
-        [...]
+    <changeSet id="00000000000000" author="jhipster" dbms="postgresql">
+        <createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="1"/>
+    </changeSet>
+    [...]
+{% endhighlight %}
 
 First, make sure you changed your xml databaseChangeLog property to include the ext. Now inside `src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml` find the data entries and change them:
 
 _00000000000000_initial_schema.xml_
 
-    <ext:loadData encoding="UTF-8"
-              file="config/liquibase/users.csv"
-              separator=";"
-              tableName="JHI_USER" identityInsertEnabled="true">
-        <column name="activated" type="boolean"/>
-        <column name="created_date" type="timestamp"/>
-    </ext:loadData>
-    <dropDefaultValue tableName="JHI_USER" columnName="created_date" columnDataType="datetime"/>
+{% highlight go %}
+<ext:loadData encoding="UTF-8"
+            file="config/liquibase/users.csv"
+            separator=";"
+            tableName="JHI_USER" identityInsertEnabled="true">
+    <column name="activated" type="boolean"/>
+    <column name="created_date" type="timestamp"/>
+</ext:loadData>
+<dropDefaultValue tableName="JHI_USER" columnName="created_date" columnDataType="datetime"/>
 
-    <ext:loadData encoding="UTF-8"
-                  file="config/liquibase/authorities.csv"
-                  separator=";"
-                  tableName="JHI_AUTHORITY"
-                  identityInsertEnabled="true" />
+<ext:loadData encoding="UTF-8"
+                file="config/liquibase/authorities.csv"
+                separator=";"
+                tableName="JHI_AUTHORITY"
+                identityInsertEnabled="true" />
 
-    <ext:loadData encoding="UTF-8"
-                  file="config/liquibase/users_authorities.csv"
-                  separator=";"
-                  tableName="JHI_USER_AUTHORITY"
-                  identityInsertEnabled="true" />
+<ext:loadData encoding="UTF-8"
+                file="config/liquibase/users_authorities.csv"
+                separator=";"
+                tableName="JHI_USER_AUTHORITY"
+                identityInsertEnabled="true" />
+{% endhighlight %}
 
 Adding the `identityInsertEnabled="true"` is the same as wrapping your Inserts with `IDENTITY_INSERT ON` and `IDENTITY_INSERT OFF` which will allow you to insert the project autogenerated identities directly. This is why we are using the MS SQL Server Liquibase for.
 
