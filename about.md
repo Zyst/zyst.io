@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /about/
 ---
 
 # About
@@ -14,7 +14,7 @@ Experienced with Spring MVC, Spring Boot. More recently I've been falling in lov
 
 I have experience creating and modifying online Mexican invoice systems compliant with SAT requirements, MEAN Stack development both on Front end and Back end, front end design and connection to RESTful backends mainly using AngularJS, and full Database encryption implementations for highly critical financial data.
 
-My current Goals are deepening my C# knowledge, and continuing to contribute to the jHipster codebase.
+My current Goals are deepening my C# knowledge, and continuing to contribute to the jHipster codebase, which I've recently fallen in love with.
 
 As for my hobbies, I like answering questions on Stack Overflow, playing videogames (Currently playing Final Fantasy XIV), and I'm teaching myself piano in the downtime.
 
