@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Use nginx as a reverse proxy for Tomcat on Windows</title>
+  <meta name="description" content="Goal: By the end of this tutorial you will have configured a completely new Windows nginx configuration, and have it proxy your Tomcat application so you can...">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="http://blog.erick-romero.com/feed.xml" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="http://blog.erick-romero.com/">My Blog</a>
+
+    <nav class="site-nav">
+        
+          
+          <a class="page-link" href="http://blog.erick-romero.com/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Use nginx as a reverse proxy for Tomcat on Windows</h1>
+    <p class="post-meta">Jun 13, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p><em>Goal:</em> By the end of this tutorial you will have configured a completely new Windows nginx configuration, and have it proxy your Tomcat application so you can access your website in a www.mywebsite.com fashion.</p>
+
+<p>All of this assumes you already changed your DNS so it’s pointing to your server. If you don’t know how to do that google how to do so for your specific registrar, in my case I use gandi and you can find instructions of how to change your DNS zone <a href="https://wiki.gandi.net/en/dns">here</a></p>
+
+<p>Go to <a href="http://nginx.org/en/download.html">the nginx download page</a> and download the latest Windows version, as of writting this 1.9.1.</p>
+
+<p>After unzipping the file go into the <code>nginx/conf/nginx.conf</code> file and remove the contents, replace them with this:</p>
+
+<p><strong>nginx.conf</strong></p>
+
+<pre><code>worker_processes  1;
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
+}
+</code></pre>
+
+<p>Note the <code>path-to-nginx</code> above, make sure to replace that with the actual path to your nginx folder.</p>
+
+<p>After that create a folder called <code>sites-enabled</code> in <code>nginx/conf/sites-enabled</code>. Then inside that folder create a file with your domain name ending in <code>.conf</code> like so:</p>
+
+<p><strong>erick-romero.conf</strong></p>
+
+<pre><code>server {
+    server_name  erick-romero.com;
+
+    location / {
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://localhost:8080;
+    }
+}
+</code></pre>
+
+<p>Inside the above file make sure you change your <code>server_name</code> to your domain name and <code>http://localhost:8080</code> to use the port you use on your Tomcat application, then deploy your Tomcat application.</p>
+
+<p>Go to the root of your nginx application and run the <code>nginx.exe</code> file as administrator. You can also travel to that folder with your Command Line/Powershell and type <code>start nginx</code>, both will work.</p>
+
+<p>If you have done everything correctly your application should now be running! Congratulations.</p>
+
+<hr />
+
+<p>References:</p>
+
+<p>http://www.mkyong.com/nginx/nginx-apache-tomcat-configuration-example/</p>
+
+<p>http://javadeveloper.asia/configuring-nginx-in-front-of-tomcat-or-other-java-application-server</p>
+
+<p>http://nginx.org/en/docs/windows.html</p>
+
+<p>https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs</p>
+
+
+  </article>
+
+</div>
+
+    </div>
+
+  </body>
+
+</html>

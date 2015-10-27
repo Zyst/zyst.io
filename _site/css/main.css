@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #e33;
+  color: #0091EA;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -328,6 +328,10 @@ code {
   font-size: 133pt;
   border-radius: 50%;
   background-color: rgba(181, 181, 181, 0.4); }
+
+@media screen and (max-width: 768px) {
+  .clockContainer {
+    visibility: hidden; } }
 
 .site-name {
   max-width: 940px;

@@ -6,8 +6,8 @@
 </description>
     <link>http://blog.erick-romero.com//</link>
     <atom:link href="http://blog.erick-romero.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2015 02:24:57 -0600</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 02:24:57 -0600</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 13:25:26 -0600</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 13:25:26 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -56,21 +56,6 @@
       </item>
     
       <item>
-        <title>Hello</title>
-        <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
-</description>
-        <pubDate>Sat, 26 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://blog.erick-romero.com//jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://blog.erick-romero.com//jekyll/update/2015/09/26/hello.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
         <title>Remove the sidebar in the Clearly extension/addon</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/clearly/iooicodkiihhpojmmeghjclgihfjdjhj?hl=en&quot;&gt;Clearly&lt;/a&gt; is a super useful tool for reading online content. However, it has a sidebar that takes away valuable empty space, here’s a guide on how to remove it.&lt;/p&gt;
 
@@ -93,8 +78,6 @@
         <link>http://blog.erick-romero.com//remove-the-sidebar-in-the-clearly-extension</link>
         <guid isPermaLink="true">http://blog.erick-romero.com//remove-the-sidebar-in-the-clearly-extension</guid>
         
-        
-        <category>Backup</category>
         
       </item>
     
@@ -163,8 +146,6 @@ http {
         <link>http://blog.erick-romero.com//use-nginx-as-a-reverse-proxy-for-tomcat-on-windows</link>
         <guid isPermaLink="true">http://blog.erick-romero.com//use-nginx-as-a-reverse-proxy-for-tomcat-on-windows</guid>
         
-        
-        <category>Backup</category>
         
       </item>
     
@@ -290,8 +271,6 @@ http {
         <guid isPermaLink="true">http://blog.erick-romero.com//how-to-use-sql-server-with-jhipster</guid>
         
         
-        <category>Backup</category>
-        
       </item>
     
       <item>
@@ -312,8 +291,6 @@ http {
         <link>http://blog.erick-romero.com//initial-commit</link>
         <guid isPermaLink="true">http://blog.erick-romero.com//initial-commit</guid>
         
-        
-        <category>Backup</category>
         
       </item>
     
