@@ -254,6 +254,12 @@
     background-color: rgba(181, 181, 181, 0.4);
 }
 
+.clockContainer {
+    @include media-query($on-mobile) {
+            visibility: hidden;
+        }
+}
+
 .site-name {
     max-width: 940px;
     padding: 0 10px;
