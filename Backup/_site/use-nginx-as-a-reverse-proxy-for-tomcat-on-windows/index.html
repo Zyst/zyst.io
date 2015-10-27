@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Use nginx as a reverse proxy for Tomcat on Windows</title>
+  <meta name="description" content="A short guide to teach you how to use nginx as a reverse proxy for Tomcat allowing you to access the Tomcat deployment in a www.mywebsite.com fashion.">
+
+  <link rel="stylesheet" href="/assets/zyst-1.0.0.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Tracking ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+
+  <body>
+
+    <header id="site-header">
+
+  <div id="avatar-container">
+
+    <a href="/">
+      <img id="author-picture" src="/assets/images/avatar.jpg" class="img-rounded"/>
+    </a>
+
+    <p id="author-name">Erick Romero</p>
+
+    <p id="author-intro" class="visible-md-block visible-lg-block">Lead Software Developer</p>
+
+    <nav>
+
+      <ul id="nav" class="list-inline hidden-md hidden-lg">
+        <li><a href="/">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="http://blog.erick-romero.com/feed.xml" target="_blank">RSS</a></li>
+        <li><a href="//github.com/zyst" target="_blank">GitHub</a></li>
+      </ul>
+
+    </nav>
+    <!-- responsive menu -->
+
+  </div>
+  <!-- avatar -->
+
+  <div id="nav-container" class="visible-md-block visible-lg-block">
+
+    <nav>
+
+      <ul class="list-unstyled">
+        <li><a href="/">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="http://blog.erick-romero.com/feed.xml" target="_blank">RSS</a></li>
+        <li><a href="//github.com/zyst" target="_blank">GitHub</a></li>
+      </ul>
+
+    </nav>
+
+  </div>
+  <!-- menu -->
+
+  <footer class="visible-md-block visible-lg-block">
+    <a href="//github.com/zyst/zyst.github.io" target="_blank" title="Visit the blog repository">Hosted with <i class="fa fa-heart"></i>&nbsp;by&nbsp;<i class="fa fa-github"></i></a>
+  </footer>
+  <!-- footer -->
+
+</header>
+
+
+    <div id="page-wrap">
+        <div id="page-content">
+            <div id="content">
+                <section id="post">
+
+  <article class="post">
+
+    <h1 class="post-title">
+      <a>Use nginx as a reverse proxy for Tomcat on Windows</a>
+    </h1>
+    <!-- title -->
+
+    <div class="post-meta">
+      <ul class="list-inline">
+        <li>
+            June
+            13,
+            2015
+        </li>
+        <li>
+          
+          <a href="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows/#disqus_thread" data-disqus-identifier="_posts/2015-06-13-use-nginx-as-a-reverse-proxy-for-tomcat-on-windows.markdown"></a>
+          
+        </li>
+        <li>
+          <a href="//github.com/zyst/zyst.github.io/blob/master/_posts/2015-06-13-use-nginx-as-a-reverse-proxy-for-tomcat-on-windows.markdown" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
+        </li>
+      </ul>
+    </div>
+    <!-- meta -->
+
+    <section class="post-content">
+      <p><em>Goal:</em> By the end of this tutorial you will have configured a completely new Windows nginx configuration, and have it proxy your Tomcat application so you can access your website in a www.mywebsite.com fashion.</p>
+
+<p>All of this assumes you already changed your DNS so it’s pointing to your server. If you don’t know how to do that google how to do so for your specific registrar, in my case I use gandi and you can find instructions of how to change your DNS zone <a href="https://wiki.gandi.net/en/dns">here</a></p>
+
+<p>Go to <a href="http://nginx.org/en/download.html">the nginx download page</a> and download the latest Windows version, as of writting this 1.9.1.</p>
+
+<p>After unzipping the file go into the <code>nginx/conf/nginx.conf</code> file and remove the contents, replace them with this:</p>
+
+<p><strong>nginx.conf</strong></p>
+
+<pre><code>worker_processes  1;
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
+}
+</code></pre>
+
+<p>Note the <code>path-to-nginx</code> above, make sure to replace that with the actual path to your nginx folder.</p>
+
+<p>After that create a folder called <code>sites-enabled</code> in <code>nginx/conf/sites-enabled</code>. Then inside that folder create a file with your domain name ending in <code>.conf</code> like so:</p>
+
+<p><strong>erick-romero.conf</strong></p>
+
+<pre><code>server {
+    server_name  erick-romero.com;
+
+    location / {
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://localhost:8080;
+    }
+}
+</code></pre>
+
+<p>Inside the above file make sure you change your <code>server_name</code> to your domain name and <code>http://localhost:8080</code> to use the port you use on your Tomcat application, then deploy your Tomcat application.</p>
+
+<p>Go to the root of your nginx application and run the <code>nginx.exe</code> file as administrator. You can also travel to that folder with your Command Line/Powershell and type <code>start nginx</code>, both will work.</p>
+
+<p>If you have done everything correctly your application should now be running! Congratulations.</p>
+
+<hr />
+
+<p>References:</p>
+
+<p>http://www.mkyong.com/nginx/nginx-apache-tomcat-configuration-example/</p>
+
+<p>http://javadeveloper.asia/configuring-nginx-in-front-of-tomcat-or-other-java-application-server</p>
+
+<p>http://nginx.org/en/docs/windows.html</p>
+
+<p>https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs</p>
+
+
+    </section>
+    <!-- content -->
+
+    
+      
+      
+  
+
+
+<section class="post-share">
+
+  <span class="share-title">Share on:</span>
+
+  <ul class="share-social-medias list-inline">
+
+    
+    <li class="twitter-social-media">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows" data-text="Use nginx as a reverse proxy for Tomcat on Windows">Tweet</a>
+    </li>
+    
+
+    
+
+    
+    <li class="google-plus-social-media">
+      <div class="g-plusone" data-size="medium" data-href="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows"></div>
+    </li>
+    
+
+    
+    <li class="linkedin-social-media">
+      <script type="IN/Share" data-url="http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows" data-counter="right" data-showzero="true"></script>
+    </li>
+    
+  </ul>
+
+</section>
+
+    
+    <!-- share -->
+
+    <footer class="post-footer">
+      
+      <div id="disqus_thread"></div>
+      
+    </footer>
+
+  </article>
+
+</section>
+
+
+<script type="text/javascript">
+
+  // Disqus widget
+
+  var disqus_identifier = '_posts/2015-06-13-use-nginx-as-a-reverse-proxy-for-tomcat-on-windows.markdown',
+    disqus_shortname = 'Zyst',
+    disqus_title = 'Use nginx as a reverse proxy for Tomcat on Windows',
+    disqus_url = 'http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows';
+
+  (function() {
+
+    var dsq = document.createElement('script');
+
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+    ( document.getElementsByTagName('head')[ 0 ] || document.getElementsByTagName('body')[ 0 ] ).appendChild( dsq );
+  })();
+
+</script>
+
+
+            </div>
+            <aside class="visible-lg-block">
+                  <section>
+
+                    <h3>Recent Posts</h3>
+
+                    <ul>
+                    
+                    <li>
+                      <a href="/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows">Use nginx as a reverse proxy for Tomcat on Windows</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/how-to-use-sql-server-with-jhipster">How to use SQL Server with jHipster</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/initial-commit">Initial Commit</a>
+                    </li>
+                    
+                    </ul>
+
+                  </section>
+                  <!-- recent posts -->
+
+                  
+                  <section id="recent-comments-section">
+
+                    <h3>Recent Comments</h3>
+
+                  </section>
+                  <!-- recent comments -->
+                  
+            </aside>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    
+    <script src="/assets/zyst-1.0.0.js"></script>
+    
+
+    
+    <script type="text/javascript">
+
+        // Disqus count
+
+        var disqus_shortname = 'Zyst';
+
+        (function() {
+
+          var s = document.createElement('script');
+
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+
+          ( document.getElementsByTagName('HEAD')[ 0 ] || document.getElementsByTagName('BODY')[ 0 ] ).appendChild( s );
+        }());
+
+    </script>
+    
+
+  </body>
+
+</html>

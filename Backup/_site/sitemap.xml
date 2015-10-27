@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://blog.erick-romero.com/</loc>
+    <lastmod>2015-06-13T00:54:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+    <url>
+      <loc>http://blog.erick-romero.com/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows</loc>
+      
+        <lastmod>2015-06-13T00:00:00-05:00</lastmod>
+      
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster</loc>
+      
+        <lastmod>2015-06-13T00:00:00-05:00</lastmod>
+      
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://blog.erick-romero.com/initial-commit</loc>
+      
+        <lastmod>2015-06-12T00:00:00-05:00</lastmod>
+      
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+  
+  <url>
+    <loc>http://blog.erick-romero.com/about/</loc>
+    
+      <lastmod>2015-06-13</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.erick-romero.com/feed.xml</loc>
+    
+      <lastmod>2015-06-13</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.erick-romero.com/index.html</loc>
+    
+      <lastmod>2015-06-13</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.erick-romero.com/sitemap.xml</loc>
+    
+      <lastmod>2015-06-13</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+</urlset>

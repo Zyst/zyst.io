@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clean</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml.
+    <title>My Blog</title>
+    <description>I do ocassionally talk about software
 </description>
-    <link>http://yourdomain.com/clean/</link>
-    <atom:link href="http://yourdomain.com/clean/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Oct 2015 14:47:29 +0530</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2015 14:47:29 +0530</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://blog.erick-romero.com//</link>
+    <atom:link href="http://blog.erick-romero.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 27 Oct 2015 02:24:57 -0600</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 02:24:57 -0600</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>A Clean Jekyll theme</title>
@@ -17,20 +17,20 @@
 
 &lt;h2 id=&quot;sample-code&quot;&gt;Sample Code&lt;/h2&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&amp;quot;net/http&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 
-&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;rw&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([]&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello world.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([]&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 
-&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;:3000&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:3000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 &lt;ul&gt;
@@ -44,9 +44,9 @@
 &lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 27 Sep 2015 00:21:59 +0530</pubDate>
-        <link>http://yourdomain.com/clean/jekyll/update/2015/09/27/clean-theme.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/clean/jekyll/update/2015/09/27/clean-theme.html</guid>
+        <pubDate>Sat, 26 Sep 2015 13:51:59 -0500</pubDate>
+        <link>http://blog.erick-romero.com//jekyll/update/2015/09/26/clean-theme.html</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//jekyll/update/2015/09/26/clean-theme.html</guid>
         
         
         <category>jekyll</category>
@@ -59,14 +59,261 @@
         <title>Hello</title>
         <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
 </description>
-        <pubDate>Sat, 26 Sep 2015 00:00:00 +0530</pubDate>
-        <link>http://yourdomain.com/clean/jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/clean/jekyll/update/2015/09/26/hello.html</guid>
+        <pubDate>Sat, 26 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://blog.erick-romero.com//jekyll/update/2015/09/26/hello.html</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//jekyll/update/2015/09/26/hello.html</guid>
         
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Remove the sidebar in the Clearly extension/addon</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/clearly/iooicodkiihhpojmmeghjclgihfjdjhj?hl=en&quot;&gt;Clearly&lt;/a&gt; is a super useful tool for reading online content. However, it has a sidebar that takes away valuable empty space, here’s a guide on how to remove it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-07-28-remove-the-sidebar-in-the-clearly-extension/screenshot-one.png&quot; alt=&quot;The criminal image in question&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First right click the Clearly icon on the top right and go to the options menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-07-28-remove-the-sidebar-in-the-clearly-extension/screenshot-two.png&quot; alt=&quot;Options menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then travel to the ‘Custom Theme’ tab, click on the ‘Custom CSS’ box and add the following: &lt;code&gt;#sidebar { display: none; } #background { right: 0px !important; }&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-07-28-remove-the-sidebar-in-the-clearly-extension/screenshot-three.png&quot; alt=&quot;Options menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After that once you refresh and check again the annoying bar is gone! Viva la clean reading!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-07-28-remove-the-sidebar-in-the-clearly-extension/screenshot-four.png&quot; alt=&quot;Options menu&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 00:00:00 -0500</pubDate>
+        <link>http://blog.erick-romero.com//remove-the-sidebar-in-the-clearly-extension</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//remove-the-sidebar-in-the-clearly-extension</guid>
+        
+        
+        <category>Backup</category>
+        
+      </item>
+    
+      <item>
+        <title>Use nginx as a reverse proxy for Tomcat on Windows</title>
+        <description>&lt;p&gt;&lt;em&gt;Goal:&lt;/em&gt; By the end of this tutorial you will have configured a completely new Windows nginx configuration, and have it proxy your Tomcat application so you can access your website in a www.mywebsite.com fashion.&lt;/p&gt;
+
+&lt;p&gt;All of this assumes you already changed your DNS so it’s pointing to your server. If you don’t know how to do that google how to do so for your specific registrar, in my case I use gandi and you can find instructions of how to change your DNS zone &lt;a href=&quot;https://wiki.gandi.net/en/dns&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;http://nginx.org/en/download.html&quot;&gt;the nginx download page&lt;/a&gt; and download the latest Windows version, as of writting this 1.9.1.&lt;/p&gt;
+
+&lt;p&gt;After unzipping the file go into the &lt;code&gt;nginx/conf/nginx.conf&lt;/code&gt; file and remove the contents, replace them with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;nginx.conf&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;worker_processes  1;
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note the &lt;code&gt;path-to-nginx&lt;/code&gt; above, make sure to replace that with the actual path to your nginx folder.&lt;/p&gt;
+
+&lt;p&gt;After that create a folder called &lt;code&gt;sites-enabled&lt;/code&gt; in &lt;code&gt;nginx/conf/sites-enabled&lt;/code&gt;. Then inside that folder create a file with your domain name ending in &lt;code&gt;.conf&lt;/code&gt; like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;erick-romero.conf&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+    server_name  erick-romero.com;
+
+    location / {
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://localhost:8080;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Inside the above file make sure you change your &lt;code&gt;server_name&lt;/code&gt; to your domain name and &lt;code&gt;http://localhost:8080&lt;/code&gt; to use the port you use on your Tomcat application, then deploy your Tomcat application.&lt;/p&gt;
+
+&lt;p&gt;Go to the root of your nginx application and run the &lt;code&gt;nginx.exe&lt;/code&gt; file as administrator. You can also travel to that folder with your Command Line/Powershell and type &lt;code&gt;start nginx&lt;/code&gt;, both will work.&lt;/p&gt;
+
+&lt;p&gt;If you have done everything correctly your application should now be running! Congratulations.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;References:&lt;/p&gt;
+
+&lt;p&gt;http://www.mkyong.com/nginx/nginx-apache-tomcat-configuration-example/&lt;/p&gt;
+
+&lt;p&gt;http://javadeveloper.asia/configuring-nginx-in-front-of-tomcat-or-other-java-application-server&lt;/p&gt;
+
+&lt;p&gt;http://nginx.org/en/docs/windows.html&lt;/p&gt;
+
+&lt;p&gt;https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 13 Jun 2015 00:00:00 -0500</pubDate>
+        <link>http://blog.erick-romero.com//use-nginx-as-a-reverse-proxy-for-tomcat-on-windows</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//use-nginx-as-a-reverse-proxy-for-tomcat-on-windows</guid>
+        
+        
+        <category>Backup</category>
+        
+      </item>
+    
+      <item>
+        <title>How to use SQL Server with jHipster</title>
+        <description>&lt;p&gt;&lt;em&gt;Goal:&lt;/em&gt; By the end of this tutorial you will have the default JHipster application running on your SQL Server, with everything being functional.&lt;/p&gt;
+
+&lt;p&gt;Start by running JHipster normally with &lt;code&gt;yo jhipster&lt;/code&gt;, select the options to use Java 8, token based authentication, SQL, MySQL as the dev. database, MySQL as the prod. database, Yes with ehcache, No Elasticsearch, No clustered HTTP, No Websockets, Maven, Grunt, and no Compass.&lt;/p&gt;
+
+&lt;p&gt;We then add the MS SQL Server JDBC dependency to the project &lt;code&gt;pom.xml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;pom.xml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[...]
+&amp;lt;!-- Microsoft JDBC --&amp;gt;
+&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;com.microsoft.sqlserver&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;sqljdbc41&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;4.1&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;!-- Liquibase MS SQL Server extensions --&amp;gt;
+&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;com.github.sabomichal&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;liquibase-mssql&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;1.4&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+[...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am using Sql JDBC 4.1, and already have it installed to my personal repository, but if you do not this will not work without some further configuration, check out &lt;a href=&quot;https://stackoverflow.com/questions/30207842/add-external-library-jar-to-spring-boot-jar-internal-lib&quot;&gt;this&lt;/a&gt; stackoverflow question for further reference.&lt;/p&gt;
+
+&lt;p&gt;The Liquibase MS SQL Server extension allows you to do some neat stuff we will be using later on in this tutorial.&lt;/p&gt;
+
+&lt;h2 id=&quot;database-modification&quot;&gt;Database modification&lt;/h2&gt;
+
+&lt;p&gt;Go into &lt;code&gt;src\main\resources\config\application-dev.yml&lt;/code&gt; and change your application to use the new datasource, and your Hibernate configuration to use the SQL Server dialect as seen below:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;application-dev.yml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spring:
+    profiles:
+        active: dev
+    datasource:
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+        url: jdbc:sqlserver://localhost:1433;databaseName=test
+        databaseName:
+        serverName:
+        username: myuser
+        password: supersecretpassword
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServerDialect
+        database: SQL_SERVER
+        openInView: false
+        show_sql: true
+        generate-ddl: false
+        [...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This assuming your database is called &lt;code&gt;test&lt;/code&gt;, change your connection url as necessary.&lt;/p&gt;
+
+&lt;p&gt;Now go into &lt;code&gt;*\src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml&lt;/code&gt; and at the top of the file change the following properties:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;00000000000000_initial_schema.xml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;databaseChangeLog
+    xmlns=&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot;
+    xmlns:ext=&quot;http://www.liquibase.org/xml/ns/dbchangelog-ext&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd&quot;&amp;gt;
+
+    &amp;lt;property name=&quot;now&quot; value=&quot;now()&quot; dbms=&quot;mysql,h2&quot;/&amp;gt;
+    &amp;lt;property name=&quot;now&quot; value=&quot;current_timestamp&quot; dbms=&quot;postgresql&quot;/&amp;gt;
+    &amp;lt;property name=&quot;now&quot; value=&quot;GETDATE()&quot; dbms=&quot;mssql&quot;/&amp;gt;
+
+    &amp;lt;changeSet id=&quot;00000000000000&quot; author=&quot;jhipster&quot; dbms=&quot;postgresql&quot;&amp;gt;
+        &amp;lt;createSequence sequenceName=&quot;hibernate_sequence&quot; startValue=&quot;1000&quot; incrementBy=&quot;1&quot;/&amp;gt;
+    &amp;lt;/changeSet&amp;gt;
+    [...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;First, make sure you changed your xml databaseChangeLog property to include the ext. Now inside &lt;code&gt;src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml&lt;/code&gt; find the data entries and change them:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;00000000000000_initial_schema.xml&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ext:loadData encoding=&quot;UTF-8&quot;
+          file=&quot;config/liquibase/users.csv&quot;
+          separator=&quot;;&quot;
+          tableName=&quot;JHI_USER&quot; identityInsertEnabled=&quot;true&quot;&amp;gt;
+    &amp;lt;column name=&quot;activated&quot; type=&quot;boolean&quot;/&amp;gt;
+    &amp;lt;column name=&quot;created_date&quot; type=&quot;timestamp&quot;/&amp;gt;
+&amp;lt;/ext:loadData&amp;gt;
+&amp;lt;dropDefaultValue tableName=&quot;JHI_USER&quot; columnName=&quot;created_date&quot; columnDataType=&quot;datetime&quot;/&amp;gt;
+
+&amp;lt;ext:loadData encoding=&quot;UTF-8&quot;
+              file=&quot;config/liquibase/authorities.csv&quot;
+              separator=&quot;;&quot;
+              tableName=&quot;JHI_AUTHORITY&quot;
+              identityInsertEnabled=&quot;true&quot; /&amp;gt;
+
+&amp;lt;ext:loadData encoding=&quot;UTF-8&quot;
+              file=&quot;config/liquibase/users_authorities.csv&quot;
+              separator=&quot;;&quot;
+              tableName=&quot;JHI_USER_AUTHORITY&quot;
+              identityInsertEnabled=&quot;true&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Adding the &lt;code&gt;identityInsertEnabled=&quot;true&quot;&lt;/code&gt; is the same as wrapping your Inserts with &lt;code&gt;IDENTITY_INSERT ON&lt;/code&gt; and &lt;code&gt;IDENTITY_INSERT OFF&lt;/code&gt; which will allow you to insert the project autogenerated identities directly. This is why we are using the MS SQL Server Liquibase for.&lt;/p&gt;
+
+&lt;p&gt;Now try running your application! Everything should be working and you should be on your way to continue using your JHipster application with SQL Server.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Originally submitted this to the &lt;a href=&quot;https://jhipster.github.io/tips/004_tip_using_ms_sql_server.html&quot;&gt;jHipster Tips Section&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 13 Jun 2015 00:00:00 -0500</pubDate>
+        <link>http://blog.erick-romero.com//how-to-use-sql-server-with-jhipster</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//how-to-use-sql-server-with-jhipster</guid>
+        
+        
+        <category>Backup</category>
+        
+      </item>
+    
+      <item>
+        <title>Initial Commit</title>
+        <description>&lt;p&gt;It’s an extremely common ocurrence. You want to find out how to do something, so you google it! Then you find this amazing blog post, and it covers everything you need to do. Amazing.&lt;/p&gt;
+
+&lt;p&gt;But sometimes you google, and once you reach page 3 of Google Search you realize you might be in uncharted territory, maybe not uncharted, maybe what you are finding is just not doing it for you. So you piece together 10 different sources and a couple of Stack Overflow questions and you finally know how to do what you want to do, success!&lt;/p&gt;
+
+&lt;p&gt;However, wouldn’t it be a shame if that effort Googling weren’t transmitted somehow? You spent a lot of time investigating, what if someone comes along a few days, weeks, years later and needs to do the same?&lt;/p&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;That is the purpose of this blog, I want to become the first kind of person. I want to become the kind of person who was the  in the second situation, but didn’t stop at learning it themselves, I want to transfer that knowledge. So whenever I find something that takes quite a bit of effort to answer with Googling I’ll go ahead and investigate it, then I’ll post it here, so you don’t have to.&lt;/p&gt;
+
+&lt;p&gt;Look forward to it.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jun 2015 00:00:00 -0500</pubDate>
+        <link>http://blog.erick-romero.com//initial-commit</link>
+        <guid isPermaLink="true">http://blog.erick-romero.com//initial-commit</guid>
+        
+        
+        <category>Backup</category>
         
       </item>
     

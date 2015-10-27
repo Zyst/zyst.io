@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>How to use SQL Server with jHipster</title>
+  <meta name="description" content="A short guide to teach you how to use SQL Server and jHipster together.">
+
+  <link rel="stylesheet" href="/assets/zyst-1.0.0.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Tracking ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+
+  <body>
+
+    <header id="site-header">
+
+  <div id="avatar-container">
+
+    <a href="/">
+      <img id="author-picture" src="/assets/images/avatar.jpg" class="img-rounded"/>
+    </a>
+
+    <p id="author-name">Erick Romero</p>
+
+    <p id="author-intro" class="visible-md-block visible-lg-block">Lead Software Developer</p>
+
+    <nav>
+
+      <ul id="nav" class="list-inline hidden-md hidden-lg">
+        <li><a href="/">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="http://blog.erick-romero.com/feed.xml" target="_blank">RSS</a></li>
+        <li><a href="//github.com/zyst" target="_blank">GitHub</a></li>
+      </ul>
+
+    </nav>
+    <!-- responsive menu -->
+
+  </div>
+  <!-- avatar -->
+
+  <div id="nav-container" class="visible-md-block visible-lg-block">
+
+    <nav>
+
+      <ul class="list-unstyled">
+        <li><a href="/">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="http://blog.erick-romero.com/feed.xml" target="_blank">RSS</a></li>
+        <li><a href="//github.com/zyst" target="_blank">GitHub</a></li>
+      </ul>
+
+    </nav>
+
+  </div>
+  <!-- menu -->
+
+  <footer class="visible-md-block visible-lg-block">
+    <a href="//github.com/zyst/zyst.github.io" target="_blank" title="Visit the blog repository">Hosted with <i class="fa fa-heart"></i>&nbsp;by&nbsp;<i class="fa fa-github"></i></a>
+  </footer>
+  <!-- footer -->
+
+</header>
+
+
+    <div id="page-wrap">
+        <div id="page-content">
+            <div id="content">
+                <section id="post">
+
+  <article class="post">
+
+    <h1 class="post-title">
+      <a>How to use SQL Server with jHipster</a>
+    </h1>
+    <!-- title -->
+
+    <div class="post-meta">
+      <ul class="list-inline">
+        <li>
+            June
+            13,
+            2015
+        </li>
+        <li>
+          
+          <a href="http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster/#disqus_thread" data-disqus-identifier="_posts/2015-06-13-how-to-use-sql-server-with-jhipster.markdown"></a>
+          
+        </li>
+        <li>
+          <a href="//github.com/zyst/zyst.github.io/blob/master/_posts/2015-06-13-how-to-use-sql-server-with-jhipster.markdown" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
+        </li>
+      </ul>
+    </div>
+    <!-- meta -->
+
+    <section class="post-content">
+      <p><em>Goal:</em> By the end of this tutorial you will have the default JHipster application running on your SQL Server, with everything being functional.</p>
+
+<p>Start by running JHipster normally with <code>yo jhipster</code>, select the options to use Java 8, token based authentication, SQL, MySQL as the dev. database, MySQL as the prod. database, Yes with ehcache, No Elasticsearch, No clustered HTTP, No Websockets, Maven, Grunt, and no Compass.</p>
+
+<p>We then add the MS SQL Server JDBC dependency to the project <code>pom.xml</code> file.</p>
+
+<p><em>pom.xml</em></p>
+
+<pre><code>[...]
+&lt;!-- Microsoft JDBC --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.microsoft.sqlserver&lt;/groupId&gt;
+    &lt;artifactId&gt;sqljdbc41&lt;/artifactId&gt;
+    &lt;version&gt;4.1&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- Liquibase MS SQL Server extensions --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.github.sabomichal&lt;/groupId&gt;
+    &lt;artifactId&gt;liquibase-mssql&lt;/artifactId&gt;
+    &lt;version&gt;1.4&lt;/version&gt;
+&lt;/dependency&gt;
+[...]
+</code></pre>
+
+<p>I am using Sql JDBC 4.1, and already have it installed to my personal repository, but if you do not this will not work without some further configuration, check out <a href="https://stackoverflow.com/questions/30207842/add-external-library-jar-to-spring-boot-jar-internal-lib">this</a> stackoverflow question for further reference.</p>
+
+<p>The Liquibase MS SQL Server extension allows you to do some neat stuff we will be using later on in this tutorial.</p>
+
+<h2 id="database-modification">Database modification</h2>
+
+<p>Go into <code>src\main\resources\config\application-dev.yml</code> and change your application to use the new datasource, and your Hibernate configuration to use the SQL Server dialect as seen below:</p>
+
+<p><em>application-dev.yml</em></p>
+
+<pre><code>spring:
+    profiles:
+        active: dev
+    datasource:
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+        url: jdbc:sqlserver://localhost:1433;databaseName=test
+        databaseName:
+        serverName:
+        username: myuser
+        password: supersecretpassword
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServerDialect
+        database: SQL_SERVER
+        openInView: false
+        show_sql: true
+        generate-ddl: false
+        [...]
+</code></pre>
+
+<p>This assuming your database is called <code>test</code>, change your connection url as necessary.</p>
+
+<p>Now go into <code>*\src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml</code> and at the top of the file change the following properties:</p>
+
+<p><em>00000000000000_initial_schema.xml</em></p>
+
+<pre><code>&lt;databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"&gt;
+
+    &lt;property name="now" value="now()" dbms="mysql,h2"/&gt;
+    &lt;property name="now" value="current_timestamp" dbms="postgresql"/&gt;
+    &lt;property name="now" value="GETDATE()" dbms="mssql"/&gt;
+
+    &lt;changeSet id="00000000000000" author="jhipster" dbms="postgresql"&gt;
+        &lt;createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="1"/&gt;
+    &lt;/changeSet&gt;
+    [...]
+</code></pre>
+
+<p>First, make sure you changed your xml databaseChangeLog property to include the ext. Now inside <code>src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml</code> find the data entries and change them:</p>
+
+<p><em>00000000000000_initial_schema.xml</em></p>
+
+<pre><code>&lt;ext:loadData encoding="UTF-8"
+          file="config/liquibase/users.csv"
+          separator=";"
+          tableName="JHI_USER" identityInsertEnabled="true"&gt;
+    &lt;column name="activated" type="boolean"/&gt;
+    &lt;column name="created_date" type="timestamp"/&gt;
+&lt;/ext:loadData&gt;
+&lt;dropDefaultValue tableName="JHI_USER" columnName="created_date" columnDataType="datetime"/&gt;
+
+&lt;ext:loadData encoding="UTF-8"
+              file="config/liquibase/authorities.csv"
+              separator=";"
+              tableName="JHI_AUTHORITY"
+              identityInsertEnabled="true" /&gt;
+
+&lt;ext:loadData encoding="UTF-8"
+              file="config/liquibase/users_authorities.csv"
+              separator=";"
+              tableName="JHI_USER_AUTHORITY"
+              identityInsertEnabled="true" /&gt;
+</code></pre>
+
+<p>Adding the <code>identityInsertEnabled="true"</code> is the same as wrapping your Inserts with <code>IDENTITY_INSERT ON</code> and <code>IDENTITY_INSERT OFF</code> which will allow you to insert the project autogenerated identities directly. This is why we are using the MS SQL Server Liquibase for.</p>
+
+<p>Now try running your application! Everything should be working and you should be on your way to continue using your JHipster application with SQL Server.</p>
+
+<p><em>Originally submitted this to the <a href="https://jhipster.github.io/tips/004_tip_using_ms_sql_server.html">jHipster Tips Section</a></em></p>
+
+
+    </section>
+    <!-- content -->
+
+    
+      
+      
+  
+
+
+<section class="post-share">
+
+  <span class="share-title">Share on:</span>
+
+  <ul class="share-social-medias list-inline">
+
+    
+    <li class="twitter-social-media">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster" data-text="How to use SQL Server with jHipster">Tweet</a>
+    </li>
+    
+
+    
+
+    
+    <li class="google-plus-social-media">
+      <div class="g-plusone" data-size="medium" data-href="http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster"></div>
+    </li>
+    
+
+    
+    <li class="linkedin-social-media">
+      <script type="IN/Share" data-url="http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster" data-counter="right" data-showzero="true"></script>
+    </li>
+    
+  </ul>
+
+</section>
+
+    
+    <!-- share -->
+
+    <footer class="post-footer">
+      
+      <div id="disqus_thread"></div>
+      
+    </footer>
+
+  </article>
+
+</section>
+
+
+<script type="text/javascript">
+
+  // Disqus widget
+
+  var disqus_identifier = '_posts/2015-06-13-how-to-use-sql-server-with-jhipster.markdown',
+    disqus_shortname = 'Zyst',
+    disqus_title = 'How to use SQL Server with jHipster',
+    disqus_url = 'http://blog.erick-romero.com/how-to-use-sql-server-with-jhipster';
+
+  (function() {
+
+    var dsq = document.createElement('script');
+
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+    ( document.getElementsByTagName('head')[ 0 ] || document.getElementsByTagName('body')[ 0 ] ).appendChild( dsq );
+  })();
+
+</script>
+
+
+            </div>
+            <aside class="visible-lg-block">
+                  <section>
+
+                    <h3>Recent Posts</h3>
+
+                    <ul>
+                    
+                    <li>
+                      <a href="/use-nginx-as-a-reverse-proxy-for-tomcat-on-windows">Use nginx as a reverse proxy for Tomcat on Windows</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/how-to-use-sql-server-with-jhipster">How to use SQL Server with jHipster</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/initial-commit">Initial Commit</a>
+                    </li>
+                    
+                    </ul>
+
+                  </section>
+                  <!-- recent posts -->
+
+                  
+                  <section id="recent-comments-section">
+
+                    <h3>Recent Comments</h3>
+
+                  </section>
+                  <!-- recent comments -->
+                  
+            </aside>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    
+    <script src="/assets/zyst-1.0.0.js"></script>
+    
+
+    
+    <script type="text/javascript">
+
+        // Disqus count
+
+        var disqus_shortname = 'Zyst';
+
+        (function() {
+
+          var s = document.createElement('script');
+
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+
+          ( document.getElementsByTagName('HEAD')[ 0 ] || document.getElementsByTagName('BODY')[ 0 ] ).appendChild( s );
+        }());
+
+    </script>
+    
+
+  </body>
+
+</html>
