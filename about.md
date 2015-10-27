@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /about/
 ---
 
 Hello there! I'm Erick Romero, I last worked at [Iris B2B Applications][1] as a C# Consultant.
