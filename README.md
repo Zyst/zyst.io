@@ -2,7 +2,7 @@
 
 * Site: [blog.erick-romero.com](http://blog.erick-romero.com)
 
-My blog, it is a mix of two amazing Jekyll themes, [Kiko](https://github.com/knaman2609/clean) and [Clean](https://github.com/knaman2609/clean) 
+My blog, it is a mix of two amazing Jekyll themes, [Clean](https://github.com/knaman2609/clean) and [Kiko](https://github.com/gfjaru/Kiko) 
 
 ## License
 
