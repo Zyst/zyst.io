@@ -84,29 +84,29 @@
 
 <p><em>application-dev.yml</em></p>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">spring</span><span class="o">:</span><span class="x">
-    </span><span class="n">profiles</span><span class="o">:</span><span class="x">
-        </span><span class="n">active</span><span class="o">:</span><span class="x"> </span><span class="n">dev</span><span class="x">
-    </span><span class="n">datasource</span><span class="o">:</span><span class="x">
-        </span><span class="n">driverClassName</span><span class="o">:</span><span class="x"> </span><span class="n">com</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">sqlserver</span><span class="o">.</span><span class="n">jdbc</span><span class="o">.</span><span class="n">SQLServerDriver</span><span class="x">
-        </span><span class="n">dataSourceClassName</span><span class="o">:</span><span class="x"> </span><span class="n">com</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">sqlserver</span><span class="o">.</span><span class="n">jdbc</span><span class="o">.</span><span class="n">SQLServerDataSource</span><span class="x">
-        </span><span class="n">url</span><span class="o">:</span><span class="x"> </span><span class="n">jdbc</span><span class="o">:</span><span class="n">sqlserver</span><span class="o">:</span><span class="c">//localhost:1433;databaseName=test</span><span class="x">
-        </span><span class="n">databaseName</span><span class="o">:</span><span class="x">
-        </span><span class="n">serverName</span><span class="o">:</span><span class="x">
-        </span><span class="n">username</span><span class="o">:</span><span class="x"> </span><span class="n">myuser</span><span class="x">
-        </span><span class="n">password</span><span class="o">:</span><span class="x"> </span><span class="n">supersecretpassword</span><span class="x">
-        </span><span class="n">cachePrepStmts</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
-        </span><span class="n">prepStmtCacheSize</span><span class="o">:</span><span class="x"> </span><span class="m">250</span><span class="x">
-        </span><span class="n">prepStmtCacheSqlLimit</span><span class="o">:</span><span class="x"> </span><span class="m">2048</span><span class="x">
-        </span><span class="n">useServerPrepStmts</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">spring</span><span class="pi">:</span>
+    <span class="s">profiles</span><span class="pi">:</span>
+        <span class="s">active</span><span class="pi">:</span> <span class="s">dev</span>
+    <span class="s">datasource</span><span class="pi">:</span>
+        <span class="s">driverClassName</span><span class="pi">:</span> <span class="s">com.microsoft.sqlserver.jdbc.SQLServerDriver</span>
+        <span class="s">dataSourceClassName</span><span class="pi">:</span> <span class="s">com.microsoft.sqlserver.jdbc.SQLServerDataSource</span>
+        <span class="s">url</span><span class="pi">:</span> <span class="s">jdbc:sqlserver://localhost:1433;databaseName=test</span>
+        <span class="s">databaseName</span><span class="pi">:</span>
+        <span class="s">serverName</span><span class="pi">:</span>
+        <span class="s">username</span><span class="pi">:</span> <span class="s">myuser</span>
+        <span class="s">password</span><span class="pi">:</span> <span class="s">supersecretpassword</span>
+        <span class="s">cachePrepStmts</span><span class="pi">:</span> <span class="s">true</span>
+        <span class="s">prepStmtCacheSize</span><span class="pi">:</span> <span class="s">250</span>
+        <span class="s">prepStmtCacheSqlLimit</span><span class="pi">:</span> <span class="s">2048</span>
+        <span class="s">useServerPrepStmts</span><span class="pi">:</span> <span class="s">true</span>
 
-    </span><span class="n">jpa</span><span class="o">:</span><span class="x">
-        </span><span class="n">database</span><span class="o">-</span><span class="n">platform</span><span class="o">:</span><span class="x"> </span><span class="n">org</span><span class="o">.</span><span class="n">hibernate</span><span class="o">.</span><span class="n">dialect</span><span class="o">.</span><span class="n">SQLServerDialect</span><span class="x">
-        </span><span class="n">database</span><span class="o">:</span><span class="x"> </span><span class="n">SQL_SERVER</span><span class="x">
-        </span><span class="n">openInView</span><span class="o">:</span><span class="x"> </span><span class="no">false</span><span class="x">
-        </span><span class="n">show_sql</span><span class="o">:</span><span class="x"> </span><span class="no">true</span><span class="x">
-        </span><span class="n">generate</span><span class="o">-</span><span class="n">ddl</span><span class="o">:</span><span class="x"> </span><span class="no">false</span><span class="x">
-        </span><span class="p">[</span><span class="o">...</span><span class="p">]</span></code></pre></figure>
+    <span class="s">jpa</span><span class="pi">:</span>
+        <span class="s">database-platform</span><span class="pi">:</span> <span class="s">org.hibernate.dialect.SQLServerDialect</span>
+        <span class="s">database</span><span class="pi">:</span> <span class="s">SQL_SERVER</span>
+        <span class="s">openInView</span><span class="pi">:</span> <span class="s">false</span>
+        <span class="s">show_sql</span><span class="pi">:</span> <span class="s">true</span>
+        <span class="s">generate-ddl</span><span class="pi">:</span> <span class="s">false</span>
+        <span class="pi">[</span><span class="nv">...</span><span class="pi">]</span></code></pre></figure>
 
 <p>This assuming your database is called <code>test</code>, change your connection url as necessary.</p>
 

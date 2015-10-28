@@ -37,7 +37,7 @@ Go into `src\main\resources\config\application-dev.yml` and change your applicat
 
 _application-dev.yml_
 
-{% highlight go %}
+{% highlight yaml %}
 spring:
     profiles:
         active: dev

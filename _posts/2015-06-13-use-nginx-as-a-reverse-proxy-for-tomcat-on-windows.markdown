@@ -14,7 +14,7 @@ After unzipping the file go into the `nginx/conf/nginx.conf` file and remove the
 
 **nginx.conf**
 
-{% highlight go %}
+{% highlight nginx %}
 worker_processes  1;
 events {
     worker_connections  1024;
@@ -33,7 +33,7 @@ After that create a folder called `sites-enabled` in `nginx/conf/sites-enabled`.
 
 **erick-romero.conf**
 
-{% highlight go %}
+{% highlight nginx %}
 server {
     server_name  erick-romero.com;
 

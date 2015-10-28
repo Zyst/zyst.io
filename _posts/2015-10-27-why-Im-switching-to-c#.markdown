@@ -19,7 +19,7 @@ Here are some examples:
 
 Getters and setters in Java
 
-{% highlight go %}
+{% highlight java %}
 private string name;
 
 public void setName(string name) {
@@ -33,7 +33,7 @@ public string getName() {
 
 Getters and setters in C#
 
-{% highlight go %}
+{% highlight csharp %}
 public string Name { get; set; }
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ public string Name { get; set; }
 
 Interface declaration and implementation in Java
 
-{% highlight go %}
+{% highlight java %}
 interface Animal {
    public void eat();
    public void travel();
@@ -60,7 +60,7 @@ public class Mammal implements Animal {
 
 Interface declaration and implementation in C#
 
-{% highlight go %}
+{% highlight csharp %}
 interface IAnimal
 {
     void eat();

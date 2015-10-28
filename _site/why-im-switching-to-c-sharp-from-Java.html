@@ -67,69 +67,69 @@
 
 <p>Getters and setters in Java</p>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">private</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">name</span><span class="p">;</span><span class="x">
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="n">string</span> <span class="n">name</span><span class="o">;</span>
 
-</span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">setName</span><span class="p">(</span><span class="kt">string</span><span class="x"> </span><span class="n">name</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
-   </span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">name</span><span class="p">;</span><span class="x">
-</span><span class="p">}</span><span class="x">
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+<span class="o">}</span>
 
-</span><span class="n">public</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">getName</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
-   </span><span class="k">return</span><span class="x"> </span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">;</span><span class="x">
-</span><span class="p">}</span></code></pre></figure>
+<span class="kd">public</span> <span class="n">string</span> <span class="nf">getName</span><span class="p">(</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
 
 <p>Getters and setters in C#</p>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="n">public</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="n">Name</span><span class="x"> </span><span class="p">{</span><span class="x"> </span><span class="n">get</span><span class="p">;</span><span class="x"> </span><span class="n">set</span><span class="p">;</span><span class="x"> </span><span class="p">}</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
 
 <p><br /></p>
 
 <p>Interface declaration and implementation in Java</p>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">interface</span><span class="x"> </span><span class="n">Animal</span><span class="x"> </span><span class="p">{</span><span class="x">
-   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">();</span><span class="x">
-   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">();</span><span class="x">
-</span><span class="p">}</span><span class="x">
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">interface</span> <span class="nc">Animal</span> <span class="o">{</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="n">eat</span><span class="o">();</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="n">travel</span><span class="o">();</span>
+<span class="o">}</span>
 
-</span><span class="n">public</span><span class="x"> </span><span class="n">class</span><span class="x"> </span><span class="n">Mammal</span><span class="x"> </span><span class="n">implements</span><span class="x"> </span><span class="n">Animal</span><span class="x"> </span><span class="p">{</span><span class="x">
-    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">(){</span><span class="x">
-      </span><span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="nb">println</span><span class="p">(</span><span class="s">"Mammal eats"</span><span class="p">);</span><span class="x">
-   </span><span class="p">}</span><span class="x">
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mammal</span> <span class="kd">implements</span> <span class="n">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="n">eat</span><span class="o">(){</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Mammal eats"</span><span class="o">);</span>
+   <span class="o">}</span>
 
-   </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">(){</span><span class="x">
-      </span><span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="nb">println</span><span class="p">(</span><span class="s">"Mammal travels"</span><span class="p">);</span><span class="x">
-   </span><span class="p">}</span><span class="x"> 
-</span><span class="p">}</span></code></pre></figure>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="n">travel</span><span class="o">(){</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Mammal travels"</span><span class="o">);</span>
+   <span class="o">}</span> 
+<span class="o">}</span></code></pre></figure>
 
 <p>Interface declaration and implementation in C#</p>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">interface</span><span class="x"> </span><span class="n">IAnimal</span><span class="x">
-</span><span class="p">{</span><span class="x">
-    </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">();</span><span class="x">
-    </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">();</span><span class="x">
-</span><span class="p">}</span><span class="x">
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">interface</span> <span class="n">IAnimal</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="nf">eat</span><span class="p">();</span>
+    <span class="k">void</span> <span class="nf">travel</span><span class="p">();</span>
+<span class="p">}</span>
 
-</span><span class="n">class</span><span class="x"> </span><span class="n">Mammal</span><span class="x"> </span><span class="o">:</span><span class="x"> </span><span class="n">IAnimal</span><span class="x">
-</span><span class="p">{</span><span class="x">
-    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">eat</span><span class="p">()</span><span class="x">
-    </span><span class="p">{</span><span class="x">
-        </span><span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Mammal eats"</span><span class="p">);</span><span class="x">
-    </span><span class="p">}</span><span class="x">
+<span class="k">class</span> <span class="nc">Mammal</span> <span class="p">:</span> <span class="n">IAnimal</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">eat</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Mammal eats"</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    </span><span class="n">public</span><span class="x"> </span><span class="n">void</span><span class="x"> </span><span class="n">travel</span><span class="p">()</span><span class="x">
-    </span><span class="p">{</span><span class="x">
-        </span><span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Mammal travels"</span><span class="p">);</span><span class="x">
-    </span><span class="p">}</span><span class="x">
-</span><span class="p">}</span></code></pre></figure>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">travel</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Mammal travels"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
-<p>The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly unexistant.</p>
+<p>The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly non-existant.</p>
 
 <h2 id="aspnet-lets-you-optionally-skip-a-lot-of-the-boring-stuff">2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.</h2>
 
 <p>The level of code provided to you when you start a new ASP.NET project is amazing. You start and you already have a working login system, you have links to set up optional stuff like Google/Facebook authentication, you have links to setup two factor authentication. Everything is just given to you.</p>
 
-<p>After a few years of developing with Java I don’t think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it’s not going to be the language standard. You are not going to be able to use this everywhere.</p>
+<p>After a few years of developing with Java I don’t think doing this manually is a badge of honor. And there are some Java projects that aim to do the same and give you a more advanced starting point. But odds are it’s not going to be the language or framework standard. You are not going to be able to use this everywhere.</p>
 
-<p>But with ASP.NET this is the language standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running, you can just develop.</p>
+<p>But with ASP.NET this is the standard. This is the proper starting point of an application. You already have a secure login implemented, and a few other goodies to hit the ground running. <strong>You can just develop</strong>.</p>
 
 <p>Then there’s the Entity Framework. Hibernate is pretty similar, and so is NHibernate. No particular advantage to be gained there, but then you get to the scaffolding.</p>
 
