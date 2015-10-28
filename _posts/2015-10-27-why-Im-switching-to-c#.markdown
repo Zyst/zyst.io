@@ -13,7 +13,7 @@ Java is a great language for developing web applications. This post is not inten
 
 So you are coming from Java, and want to learn C#. You prepare yourself for a transition you have grown accustomed to when adopting a new language, you clench your teeth and open a book.
 
-Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite comming. C# and Java are basically the same language.
+Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite coming. C# and Java are basically the same language.
 
 Here are some examples:
 
