@@ -6,8 +6,8 @@
 </description>
     <link>http://blog.erick-romero.com//</link>
     <atom:link href="http://blog.erick-romero.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Oct 2015 13:05:00 -0600</pubDate>
-    <lastBuildDate>Wed, 28 Oct 2015 13:05:00 -0600</lastBuildDate>
+    <pubDate>Thu, 29 Oct 2015 12:05:10 -0600</pubDate>
+    <lastBuildDate>Thu, 29 Oct 2015 12:05:10 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;So you are coming from Java, and want to learn C#. You prepare yourself for a transition you have grown accustomed to when adopting a new language, you clench your teeth and open a book.&lt;/p&gt;
 
-&lt;p&gt;Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite comming. C# and Java are basically the same language.&lt;/p&gt;
+&lt;p&gt;Then you read the first few chapters, and you keep reading. Eventually you realize that the transition pain is not quite coming. C# and Java are basically the same language.&lt;/p&gt;
 
 &lt;p&gt;Here are some examples:&lt;/p&gt;
 
@@ -275,8 +275,10 @@
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xmlns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xmlns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.liquibase.org/xml/ns/dbchangelog-ext&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xmlns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xsi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xsi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;schemaLocation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
-    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xsi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;schemaLocation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.liquibase.org/xml/ns/dbchangelog 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 
     &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;now&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;now()&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dbms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mysql,h2&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;now&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;current_timestamp&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dbms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;postgresql&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
