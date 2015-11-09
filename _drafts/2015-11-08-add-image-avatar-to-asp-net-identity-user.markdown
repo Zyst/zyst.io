@@ -6,5 +6,3 @@ permalink: /add-image-avatar-to-asp-net-identity-user
 ---
 
 This tutorial will teach you how to add an image/avatar to your ASP.NET MVC 5 identity user.
-
-
