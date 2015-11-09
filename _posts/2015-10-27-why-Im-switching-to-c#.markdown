@@ -48,11 +48,11 @@ interface Animal {
 }
 
 public class Mammal implements Animal {
-    public void eat(){
+    public void Eat(){
       System.out.println("Mammal eats");
    }
 
-   public void travel(){
+   public void Travel(){
       System.out.println("Mammal travels");
    } 
 }
