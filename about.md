@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello there! I'm Erick Romero, I last worked at [Iris B2B Applications][1] as a C# Consultant.
+Hello there! I'm Erick Romero, I currently work in [Iris B2B Applications][1] as a C# Consultant.
 
 I’m finishing up University at [Tecmilenio][2].
 

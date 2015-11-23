@@ -4,7 +4,7 @@ email: erick.romero.dev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I do ocassionally talk about software
 baseurl: "/"
-url: "http://blog.erick-romero.com" # the base hostname & protocol for your site
+url: "http://erick-romero.com" # the base hostname & protocol for your site
 twitter_username: Zyst
 github_username:  Zyst
 
