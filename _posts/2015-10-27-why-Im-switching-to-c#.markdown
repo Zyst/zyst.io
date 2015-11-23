@@ -63,18 +63,18 @@ Interface declaration and implementation in C#
 {% highlight csharp %}
 interface IAnimal
 {
-    void eat();
-    void travel();
+    void Eat();
+    void Travel();
 }
 
 class Mammal : IAnimal
 {
-    public void eat()
+    public void Eat()
     {
         Console.WriteLine("Mammal eats");
     }
 
-    public void travel()
+    public void Travel()
     {
         Console.WriteLine("Mammal travels");
     }
