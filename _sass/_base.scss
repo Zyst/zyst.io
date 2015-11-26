@@ -23,6 +23,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
 }
 
 
@@ -96,6 +97,7 @@ a {
     position: relative;
     display: inline-block;
     padding-bottom: 2px;
+    -webkit-text-size-adjust: 100%;
 
     &:hover {
         &::before {
