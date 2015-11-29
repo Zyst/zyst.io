@@ -1,10 +1,8 @@
 ## Erick Romero blog
 
-* Site: [blog.erick-romero.com](http://blog.erick-romero.com)
+Hosted on [erick-romero.com](http://erick-romero.com) by Github pages.
 
-My blog, it is a mix of two amazing Jekyll themes, [Clean](https://github.com/knaman2609/clean) and [Kiko](https://github.com/gfjaru/Kiko)
-
-Although Kiko isn't implemented yet, and I'm not done making the site reactive. It'll do for now! 
+My blog is a modified version of the amazing Jekyll theme [Clean](https://github.com/knaman2609/clean). Feel free to reuse parts or all of it in your own project/blog.
 
 ## License
 
