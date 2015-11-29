@@ -37,7 +37,7 @@ We could embed images directly inside our html `<img>` tags and it would work `<
 **Same code working in Firefox**
 ![Firefox Success](/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/firefox-success.png)
 
-You can find that JS Fiddle [here](http://jsfiddle.net/02nojg8w/), it gets a remote image and converts it into a Base64 Data URL. To test if these changes helped you solve your issue you can run this Fiddle, in the text box enter your own URL and an image, and see if it's working.
+You can find that JS Fiddle [here](http://jsfiddle.net/02nojg8w/){:target="_blank"}, it gets a remote image and converts it into a Base64 Data URL. To test if these changes helped you solve your issue you can run this Fiddle, in the text box enter your own URL and an image, and see if it's working.
 
 ##The solution
 
