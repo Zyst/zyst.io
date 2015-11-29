@@ -48,11 +48,11 @@ interface Animal {
 }
 
 public class Mammal implements Animal {
-    public void Eat(){
+    public void eat(){
       System.out.println("Mammal eats");
    }
 
-   public void Travel(){
+   public void travel(){
       System.out.println("Mammal travels");
    } 
 }
@@ -93,7 +93,7 @@ But with ASP.NET this is the standard. This is the proper starting point of an a
 
 Then there's the Entity Framework. Hibernate is pretty similar, and so is NHibernate. No particular advantage to be gained there, but then you get to the scaffolding.
 
-Once you start using scaffolding in your project (This being in an MVC context) Visual Studio grabs the Model, and automatically generates a CQRS Controller and View. It's amazing how fast everything becomes with this. 
+Once you start using scaffolding in your project (This being in an MVC context) Visual Studio grabs the Model, and automatically generates a CRUD Controller and View. It's amazing how fast everything becomes with this. 
 
 What I'm trying to say is: It frees you from the most mundane and repetitive aspects of programming and just lets you code.
 
