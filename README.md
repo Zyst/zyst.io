@@ -2,7 +2,7 @@
 
 Hosted on [erick-romero.com](http://erick-romero.com) by Github pages.
 
-My blog is a modified version of the amazing Jekyll theme [Clean](https://github.com/knaman2609/clean). Feel free to reuse parts or all of it in your own project/blog.
+A highly minimalist blog, a modified version of the amazing Jekyll theme [Clean](https://github.com/knaman2609/clean). Feel free to reuse parts or all of it in your own project/blog.
 
 ## Screenshots
 
