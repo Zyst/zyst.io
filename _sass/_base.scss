@@ -58,7 +58,7 @@ figure > a > img {
     padding: 0px 0px;
     margin: 0 auto;
     @media (min-width: 1000px) {
-        width: 960px;
+        max-width: 960px;
     }
 }
 
