@@ -53,12 +53,38 @@ img {
 /**
  * Figures
  */
-figure > img {
+figure > a > img {
     display: block;
+    padding: 0px 0px;
+    margin: 0 auto;
+    @media (min-width: 1000px) {
+        width: 960px;
+    }
+}
+
+figure > a {
+    cursor: zoom-in;
+    display: block;
+    color: transparent;
+    padding: 0px 0px;
+    position: inherit;
+    max-width: 95%;
+    margin: 0 auto;
+    @media (min-width: 1000px) {
+        max-width: 960px;
+    }
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-weight: bold;
+    max-width: 95%;
+    padding: 0px 10px;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 20px;
+    @media (min-width: 1000px) {
+        width: 960px;
+    }
 }
 
 
