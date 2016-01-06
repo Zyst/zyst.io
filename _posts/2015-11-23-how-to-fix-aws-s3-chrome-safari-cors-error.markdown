@@ -31,11 +31,19 @@ In our case we had a recommended configuration by Amazon, and we still couldn't 
 
 We could embed images directly inside our html `<img>` tags and it would work `<img src="https://site.s3.amazonaws.com/bucket/some-image.png" />` however, when we tried to get the image with Javascript we would get one of the two errors mentioned above.
 
-**The error in Chrome**
-![Chrome Error](/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-error.png)
+<figure>
+    <figcaption>The error in Chrome</figcaption>
+    <a href="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-error.png" target="_blank">
+        <img src="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-error.png" alt="Chrome Error"></img>
+    </a>
+</figure>
 
-**Same code working in Firefox**
-![Firefox Success](/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/firefox-success.png)
+<figure>
+    <figcaption>Same code working in Firefox</figcaption>
+    <a href="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/firefox-success.png" target="_blank">
+        <img src="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/firefox-success.png" alt="Firefox Success"></img>
+    </a>
+</figure>
 
 You can find that JS Fiddle [here](http://jsfiddle.net/02nojg8w/){:target="_blank"}, it gets a remote image and converts it into a Base64 Data URL. To test if these changes helped you solve your issue you can run this Fiddle, in the text box enter your own URL and an image, and see if it's working.
 
@@ -43,7 +51,11 @@ You can find that JS Fiddle [here](http://jsfiddle.net/02nojg8w/){:target="_blan
 
 First we went into our Amazon CORS Settings, click in our bucket, select 'Properties' in the top right area, and expand the 'permissions' tab:
 
-![AWS S3 Settings](/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/aws-s3.png)
+<figure>
+    <a href="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/aws-s3.png" target="_blank">
+        <img src="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/aws-s3.png" alt="AWS S3 Settings"></img>
+    </a>
+</figure>
 
 Then we click the `Edit CORS Configuration` button and change our settings to this:
 
@@ -69,4 +81,8 @@ img.src = url.replace(/^https:\/\//i, 'http://');
 
 After that you will be able to get your images correctly in Chrome and Safari.
 
-![AWS S3 Settings](/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-success.png)
+<figure>
+    <a href="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-success.png" target="_blank">
+        <img src="/assets/images/posts/2015-11-23-how-to-fix-aws-s3-chrome-safari-cors-error/chrome-success.png" alt="Chrome Success"></img>
+    </a>
+</figure>
