@@ -4,7 +4,7 @@ email: erick.romero.dev@gmail.com
 # Analytics code
 google: UA-70764236-1
 description: > # this means to ignore newlines until "baseurl:"
-  I do ocassionally talk about software
+  A blog about software
 baseurl: "/"
 url: "http://erick-romero.com" # the base hostname & protocol for your site
 twitter_username: Zyst
