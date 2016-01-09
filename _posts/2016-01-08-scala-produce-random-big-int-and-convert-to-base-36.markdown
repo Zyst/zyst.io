@@ -27,7 +27,7 @@ val baseString: String = randomBigInt.toString(36)
 
 In the REPL it would look something like this:
 
-{% highlight shell %}
+{% highlight powershell %}
 Welcome to Scala version 2.11.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_75).
 Type in expressions to have them evaluated.
 Type :help for more information.
