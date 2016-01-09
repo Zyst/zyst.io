@@ -171,6 +171,9 @@ pre {
 code {
     background: #fafafd;
     padding: 0.063em;
+}
+
+p > code {
     border: 0.063em solid #dedede;
 }
 
