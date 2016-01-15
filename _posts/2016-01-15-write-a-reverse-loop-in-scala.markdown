@@ -21,10 +21,10 @@ Here's how to do it:
 for (i <- 10 to 1 by -1) print(i + " ")
 {% endhighlight %}
 
-The `by` in our for loop tells Scala how it should deal with the iteration, for example
+The `by` in our for loop tells Scala how it should deal with the iteration, for example:
 
 {% highlight scala %}
 for (i <- 1 to 10 by 2) print(i + " ")
 {% endhighlight %}
 
-Results in `1 3 5 7 9`, using `by` inside your for loops you can gain a lot of flexibility using for loops!
+Results in `1 3 5 7 9`, using `by` inside your for loops you can gain a lot of flexibility!
