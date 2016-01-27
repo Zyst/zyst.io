@@ -153,6 +153,10 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
+    
+    p {
+        border-left: .3rem solid #0091EA;
+    }
 }
 
 
