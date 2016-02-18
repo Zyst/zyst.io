@@ -17,4 +17,10 @@ If you press: `Command + Shift + G` you can paste an entire directory to navigat
     </a>
 </figure>
 
+## Screenshots
+
+Multi Screen Screenshot is done with `Command + Shift + 3`, this one kind of sucks with multiple monitors. In general just use `Command + Shift + 4`, it lets you select an area, but if while you have the area select going you press `Space` it will let you select a Window instead. 
+
+The two above have puush auto hooks.
+
 More to come soon as I keep finding them out!
