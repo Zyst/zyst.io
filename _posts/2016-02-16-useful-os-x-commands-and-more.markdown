@@ -13,7 +13,7 @@ If you press: `Command + Shift + G` you can paste an entire directory to navigat
 
 <figure>
     <a href="/assets/images/posts/2016-02-16-useful-os-x-commands-and-more/ss1.png" target="_blank">
-        <img src="/assets/images/posts/2016-02-16-useful-os-x-commands-and-more/ss1.png" alt="The criminal image in question"></img>
+        <img src="/assets/images/posts/2016-02-16-useful-os-x-commands-and-more/ss1.png" alt="Navigate"></img>
     </a>
 </figure>
 
@@ -34,5 +34,15 @@ chflags -R nouchg /PATH/TO/DIRECTORY/WITH/LOCKED/FILES/
 {% endhighlight %}
 
 The `chmod` first gives you read/write permissions on the folder and children. The second one removes the OS X 'Locked' flag which wouldn't let you edit files. The two above are very useful when copy-pasting something from Windows.  
+
+## Use Media Hotkeys with a non-apple keyboard
+
+Download Karabiner with `brew cask install karabiner` and then in settings turn on the following:
+
+<figure>
+    <a href="/assets/images/posts/2016-02-16-useful-os-x-commands-and-more/ss2.png" target="_blank">
+        <img src="/assets/images/posts/2016-02-16-useful-os-x-commands-and-more/ss2.png" alt="Karabiner settings"></img>
+    </a>
+</figure>
 
 More to come soon as I keep finding them out!
