@@ -45,4 +45,34 @@ Download Karabiner with `brew cask install karabiner` and then in settings turn 
     </a>
 </figure>
 
+##  Hide a folder
+
+To hide a folder use the terminal and use the following command:
+
+{% highlight bash %}
+chflags hidden /path/to/folder/
+{% endhighlight %}
+
+This will hide the folder in Finder. Although you can still access it with manual traveling to route, or with your terminal.
+
+To remove the hidden flag use the following command:
+
+{% highlight bash %}
+chflags nohidden /path/to/folder/
+{% endhighlight %}
+
+## Manually add stuff to your $PATH
+
+To manually add stuff to your system PATH use the command:
+
+{% highlight bash %}
+nano ~/.bash_profile 
+{% endhighlight %}
+
+And then manually add a line with the reference
+
+{% highlight bash %} 
+export PATH="/Users/zyst/anaconda/bin:$PATH"
+{% endhighlight %}
+
 More to come soon as I keep finding them out!
