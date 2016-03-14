@@ -31,7 +31,7 @@ I am using Sql JDBC 4.1, and already have it installed to my personal repository
 
 The Liquibase MS SQL Server extension allows you to do some neat stuff we will be using later on in this tutorial.
 
-##Database modification
+## Database modification
 
 Go into `src\main\resources\config\application-dev.yml` and change your application to use the new datasource, and your Hibernate configuration to use the SQL Server dialect as seen below:
 

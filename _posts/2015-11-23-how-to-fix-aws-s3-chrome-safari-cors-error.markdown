@@ -5,7 +5,7 @@ description: AWS S3 has a bug where Chrome CORS will prevent you from fetching i
 permalink: /how-to-fix-aws-s3-chrome-and-safari-cors-on-images
 ---
 
-##The issue
+## The issue
 
 So you are trying to get a remote AWS S3 resource, in this specific case, an image. You do your request and an error is thrown:
 
@@ -47,7 +47,7 @@ We could embed images directly inside our html `<img>` tags and it would work `<
 
 You can find that JS Fiddle [here](http://jsfiddle.net/02nojg8w/){:target="_blank"}, it gets a remote image and converts it into a Base64 Data URL. To test if these changes helped you solve your issue you can run this Fiddle, in the text box enter your own URL and an image, and see if it's working.
 
-##The solution
+## The solution
 
 First we went into our Amazon CORS Settings, click in our bucket, select 'Properties' in the top right area, and expand the 'permissions' tab:
 
