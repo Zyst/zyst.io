@@ -9,7 +9,7 @@ I've been developing with Java for around 8 years now. And professionally I've f
 
 Java is a great language for developing web applications. This post is not intended to bash the language. So, why am I leaving?
 
-##1.- You already know C\#
+## 1.- You already know C\#
 
 So you are coming from Java, and want to learn C#. You prepare yourself for a transition you have grown accustomed to when adopting a new language, you clench your teeth and open a book.
 
@@ -37,7 +37,7 @@ Getters and setters in C#
 public string Name { get; set; }
 {% endhighlight %}
 
-<br/>
+<br />
 
 Interface declaration and implementation in Java
 
@@ -83,7 +83,7 @@ class Mammal : IAnimal
 
 The similarities do not end there by any means, after getting familiar with C# you find that aside from some advanced concepts you are dealing with almost the same language, the learning curve is nearly non-existant.
 
-##2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.
+## 2.- ASP.NET lets you (optionally) skip a lot of the boring stuff.
 
 The level of code provided to you when you start a new ASP.NET project is amazing. You start and you already have a working login system, you have links to set up optional stuff like Google/Facebook authentication, you have links to setup two factor authentication. Everything is just given to you.
 
@@ -101,7 +101,7 @@ The only thing similar to this that I've seen is the [jHipster][6] code generati
 
 Essentially, ASP.NET made programming incredibly fun. It lets me concentrate my efforts into crafting my application logic, freeing me from repeating the same code I've written so many times in a per-project basis. 
 
-##3.- The Java web future is a black box
+## 3.- The Java web future is a black box
 
 Java is incredibly extensible. That is one of its main selling points, you can do almost anything with Java, and someone has probably done a Library that does it for you anyway.
 
