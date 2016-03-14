@@ -75,4 +75,15 @@ And then manually add a line with the reference
 export PATH="/Users/zyst/anaconda/bin:$PATH"
 {% endhighlight %}
 
+## Add a terminal alias
+
+To add an alias for the terminal open your `bash_profile` and add the alias after `alias name='commands'`.
+
+{% highlight bash %}
+nano ~/.bash_profile 
+
+# NCMPCPP
+alias muse='mpd && mpdas && ncmpcpp'
+{% endhighlight %}
+
 More to come soon as I keep finding them out!
