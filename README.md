@@ -19,7 +19,7 @@ A highly minimalist blog, a modified version of the amazing Jekyll theme [Clean]
 
 #### The MIT License (MIT)
 
-Copyright (c) 2015 Erick Romero
+Copyright (c) 2016 Erick Romero
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
