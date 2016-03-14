@@ -10,7 +10,7 @@ In Scala we usually write for loops with this syntax:
 {% highlight scala %}
 // 1 2 3 4 5 6 7 8 9 10
 for (i <- 1 to 10) print(i + " ")
-{% endhighlight %}          z
+{% endhighlight %}
 
 But what if we want to do the reverse? Start at 10, and reduce until we reach 1.
 
