@@ -6,13 +6,16 @@ A highly minimalist blog, a modified version of the amazing Jekyll theme [Clean]
 
 ## Screenshots
 
-**Landing Page**
+**Home**
 
-![Landing](/assets/images/landing.png)
+![Home](/assets/images/readme/home.png)
+
+**About**
+![About](/assets/images/readme/about.png)
 
 **Posts**
 
-![Post](/assets/images/post.png)
+![Post](/assets/images/readme/post.png)
 
 
 ## License
