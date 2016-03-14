@@ -33,6 +33,11 @@
 
     .page-link {
         color: #444;
+        
+        &:hover {
+            color: #0071B8;
+            transition: color .25s;
+        }
     }
     .page-link {
         display: block;
@@ -192,6 +197,7 @@
 .home a:hover {
     background: #fafafd;
     outline:  1px solid #C3D5E4;
+    color: #0071B8;
 }
 
 .home  a::before {
@@ -200,4 +206,11 @@
 
 .home .post-meta {
     text-align: right;
+}
+
+.footer-icons {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4em;
+    color: #0091EA;
 }
