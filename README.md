@@ -17,6 +17,9 @@ A highly minimalist blog, a modified version of the amazing Jekyll theme [Clean]
 
 ![Post](/assets/images/readme/post.png)
 
+**Code**
+![Code](/assets/images/readme/code.png)
+
 
 ## License
 
