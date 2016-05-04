@@ -6,20 +6,20 @@ A highly minimalist blog, a modified version of the amazing Jekyll theme [Clean]
 
 ## Screenshots
 
-**Home**
+### Home
 
 ![Home](/assets/images/readme/home.png)
 
 **About**
 ![About](/assets/images/readme/about.png)
 
-About has been updated with [Gridfolio](https://github.com/christinecha/gridfolio) by @christinecha
+About has been updated with [Gridfolio](https://github.com/christinecha/gridfolio) by [@christinecha](https://github.com/christinecha)
 
-**Posts**
+### Posts
 
 ![Post](/assets/images/readme/post.png)
 
-**Code**
+### Code
 ![Code](/assets/images/readme/code.png)
 
 
