@@ -26,4 +26,4 @@ I love learning, and also spreading the love once I find out something that coul
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" type="text/javascript"></script>
-<script src="../assets/portfolio/index.js" type="text/javascript"></script>
+<script src="../assets/gridfolio/index.js" type="text/javascript"></script>
