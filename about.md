@@ -10,6 +10,11 @@ I mostly focus on C# (ASP.NET MVC and Web API) and JavaScript (AngularJS and Nod
 
 I love learning, and also spreading the love once I find out something that could be hard or complicated to find out otherwise, which is mostly what I'll be posting in this blog.
 
+<hr />
+
+## Portfolio
+<div id="gridfolio"></div>
+
 <footer>
     <hr />
     
@@ -19,3 +24,6 @@ I love learning, and also spreading the love once I find out something that coul
         <a href="https://github.com/Zyst" target="_blank"><i class="fa fa-github-square"></i></a>
     </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" type="text/javascript"></script>
+<script src="../lib/gridfolio/index.js" type="text/javascript"></script>
