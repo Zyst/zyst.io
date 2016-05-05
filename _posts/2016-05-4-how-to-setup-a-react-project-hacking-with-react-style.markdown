@@ -9,7 +9,7 @@ This guide will guide you on how to setup a project with the [http://www.hacking
 
 You can follow along by typing the commands below by hand. Or you can go to [this repository](https://github.com/Zyst/react-hacking-with-react-kickstarter) and fork the skeleton. Although I would recommend updating the libraries in `package.json`.
 
-Without further adue, lets begin!
+Without further ado, lets begin!
 
 For our base setup just run these commands:
 
