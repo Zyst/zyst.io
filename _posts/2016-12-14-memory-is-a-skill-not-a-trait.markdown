@@ -40,7 +40,7 @@ This is another thing the course [Learning how to learn](https://www.coursera.or
 
 So one of the first things you must do, which can be a bit of an ego hit is: **Acknowledge that just because you know how to find the answer to a problem, does not mean _you_ know how to solve the problem**.
 
-This is very relevant in what I do for a living, Programming. I believe one could live their entire Programming career exclusively by being good enough at Googling. However, to generate true competence we must first acknowledge that knowledge we know we can find is not necessarily _our_ knowledge. And decide to do something about it.
+This is very relevant in what I do for a living, Programming. I believe one could live their entire Programming career exclusively by being good enough at Googling. However, to generate true competence we must first acknowledge that knowledge we know we can find is not _our_ knowledge. And decide to do something about it.
 
 We need to learn how to recognize what we don’t know. This can be hard, because you might be so used to searching, and grabbing references that it has become second nature, a thoughtless action. Which means adding a conscious reminder on top of it to “Add this to my Anki deck” can be hard. What I did is add a small habit everyday. After I finished my productive day, I would go into my [Google activity log](https://myactivity.google.com/myactivity), and look through my entire search history.
 
