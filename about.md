@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Hello there! I'm Erick Romero and I'm a Full Stack Web Developer currently working with <a href="http://iris-apps.mx/" target="_blank">Iris B2B Applications</a>. 
+I’m an extremely quick learning, and passionate Full-Stack Web Developer currently working with Iris B2B Applications.
 
-I mostly focus on C# (ASP.NET MVC and Web API) and JavaScript (AngularJS and Node). I'm highly results oriented, and have an excellent track record translating big, sprawling concepts into clean Web Apps. 
+I focus on JavaScript development particularly Node, and React. But I also have a lot of experience with Angular 1.x. I’m highly results oriented, and have an excellent track record translating big, sprawling concepts into clean Web Apps.
 
-I love learning, and also spreading the love once I find out something that could be hard or complicated to find out otherwise, which is mostly what I'll be posting in this blog.
+Currently I’m learning Go for highly performant concurrency/parallelism, and learning how to develop Progressive Web Applications to push my front-end skills to a higher level.
+
+I love learning, and also spreading the love once I find out something that could be hard or complicated to find out otherwise, that along with my musings is what I'll be posting in this blog.
 
 <hr />
 
@@ -17,7 +19,7 @@ I love learning, and also spreading the love once I find out something that coul
 
 <footer>
     <hr />
-    
+
     <div class="footer-icons">
         <a href="mailto:erick.romero.dev@gmail.com"><i class="fa fa-envelope-square"></i></a>
         <a href="https://mx.linkedin.com/pub/erick-romero/68/861/5bb" target="_blank"><i class="fa fa-linkedin-square"></i></a>
