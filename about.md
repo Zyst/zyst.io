@@ -22,7 +22,7 @@ I love learning, and also spreading the love once I find out something that coul
 
     <div class="footer-icons">
         <a href="mailto:erick.romero.dev@gmail.com"><i class="fa fa-envelope-square"></i></a>
-        <a href="https://mx.linkedin.com/pub/erick-romero/68/861/5bb" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://www.linkedin.com/in/erick5" target="_blank"><i class="fa fa-linkedin-square"></i></a>
         <a href="https://github.com/Zyst" target="_blank"><i class="fa fa-github-square"></i></a>
     </div>
 </footer>
