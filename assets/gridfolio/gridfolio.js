@@ -13,11 +13,22 @@ gf_content =  [
 Rows can have 1 - 9 blocks.
                                     */
 
+var quotes = [
+  "MINDFULNESS. CARE. AWARENESS.",
+  "Take responsibility for your own happiness",
+  "If You Want To Go Fast, Go Alone. If You Want To Go Far, Go Together",
+  "What you think you become",
+  "What you imagine, you create",
+  "Do one thing at a time"
+];
+
+var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
 var gf_content = [
   [ // row
     { // block
       title: "Erick Romero",
-      keywords: ["JavaScript", "AngularJS", "C#", "ASP.NET", "React", "NoSQL"],
+      keywords: ["JavaScript", "NodeJS", "React", "ES6", "AngularJS", "Go"],
       style: {
         backgroundColor: "#0091EA",
         fontSize: "25px",
@@ -26,7 +37,7 @@ var gf_content = [
     },
     { // block
       imageURL: "../assets/images/portfolio/SIGAD.png",
-      keywords: ["JavaScript", "AngularJS", "AWS S3", "Node", "Virtualization"],
+      keywords: ["JavaScript", "AngularJS", "AWS", "NodeJS", "Virtualization"],
       style: {
         backgroundColor: "#0091EA",
       }
@@ -34,14 +45,15 @@ var gf_content = [
   ],
   [ // row
     { // block
-      title: "MINDFULNESS. CARE. AWARENESS.",
+      title: randomQuote,
       customHeight: true,
       style: {
         backgroundColor: '#d88200',
         'font-weight': 'bold',
         height: '100px',
         color: '#373737',
-        fontSize: "20px"
+        fontSize: "20px",
+        textTransform: 'uppercase'
       }
     },
   ],
