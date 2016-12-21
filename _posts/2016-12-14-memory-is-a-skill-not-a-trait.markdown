@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Memory is a skill, not a trait"
-description: Memory is a skill, and as such it can be improved. Here's how I've improved mine.
-permalink: /memory-is-a-skill-not-a-trait
+title: "Good Memory is a skill, not a trait"
+description: Good Memory is a skill, and as such it can be improved. Here's how I've improved mine.
+permalink: /good-memory-is-a-skill-not-a-trait
 ---
 
 I had horrible memory. For as long as I can remember I always thought that. I’d even struggle to remember the last names of my best friends, whom I talked with everyday.
