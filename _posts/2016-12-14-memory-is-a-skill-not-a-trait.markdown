@@ -21,7 +21,7 @@ What is spaced repetition? It’s a recall method where we learn something, we �
 
 That all sounds very well and good, but it also sounds like it would take an incredible amount of effort to manage. Let me introduce you to [Anki](http://ankisrs.net/). Anki is software that essentially automates this spaced repetition process.
 
-You add your cards to your Anki deck, and it will spit out the card when it’s relevant. Then you have the option of marking your answer as “Again, Hard, Good, or Easy.” which will affect which interval in which the card appears again. This is similar to the Leitner system.
+You add your cards to your Anki deck, and it will spit out the card when it’s relevant. Then you have the option of marking your answer as “Again, Hard, Good, or Easy.” which will affect which interval will pass until the card appears again. This is similar to the Leitner system.
 
 <figure>
   <a href="/assets/images/posts/2016-12-14-memory-is-a-skill-not-a-trait/leitner-system.svg.png" target="_blank">
