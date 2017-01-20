@@ -83,7 +83,7 @@
 .post-header {
     font-family: $base-font-family;
     color: $text-color;
-    max-width: 540px;
+    max-width: $content-width;
     padding: 0px 10px;
     margin: 0 auto;
     margin-bottom: $spacing-unit;
@@ -105,8 +105,8 @@
     margin-bottom: $spacing-unit;
 
     p {
-        max-width: 540px;
-        padding: 0px 10px;
+        max-width: $content-width;
+        padding: 0 0 15px 0;
         margin: 0 auto;
         line-height: 26px;
         margin-bottom: 20px;
@@ -120,7 +120,7 @@
             font-size: 28px;
         }
 
-        max-width: 540px;
+        max-width: $content-width;
         padding: 0px 10px;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -134,7 +134,7 @@
             font-size: 22px;
         }
 
-        max-width: 540px;
+        max-width: $content-width;
         padding: 0px 10px;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -148,7 +148,7 @@
             font-size: 18px;
         }
 
-        max-width: 540px;
+        max-width: $content-width;
         padding: 0px 10px;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -170,7 +170,7 @@
     }
 
     ul {
-        max-width: 540px;
+        max-width: $content-width;
         padding: 0 10px;
         padding-left: 40px;
         margin: 0 auto;
@@ -182,7 +182,7 @@
  * Home
  */
 .home {
-    max-width: 540px;
+    max-width: $content-width;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -216,7 +216,7 @@
 
 // Gridfolio
 #gridfolio {
-    max-width: 540px;
+    max-width: $content-width;
     margin: auto;
     @media (min-width: 1000px) {
         max-width: 960px;
@@ -309,4 +309,3 @@
   .gf-block-4,
   .gf-block-5 { width: 100%; padding: 10px 20px; }
 }
-

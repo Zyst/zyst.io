@@ -155,7 +155,7 @@ blockquote {
 }
 
 pre {
-    max-width: 540px;
+    max-width: $content-width;
     display: block;
     font-size: 0.875em;
     font-family: $code-font-family;
@@ -179,7 +179,6 @@ p > code {
  * Clearfix
  */
 %clearfix {
-
     &:after {
         content: "";
         display: table;
@@ -215,7 +214,7 @@ p > code {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin: 0 auto;
-    max-width: 540px;
+    max-width: $content-width;
  }
 
 /**
@@ -223,6 +222,6 @@ p > code {
  */
 footer {
     margin: 0 auto;
-    max-width: 540px;
+    max-width: $content-width;
     padding-bottom: 25px;
 }
