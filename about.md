@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 I’m an extremely quick learning, and passionate Full-Stack Web Developer currently working with Iris B2B Applications.
