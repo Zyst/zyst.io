@@ -12,20 +12,12 @@ Currently I’m learning Go for highly performant concurrency/parallelism, and l
 
 I love learning, and also spreading the love once I find out something that could be hard or complicated to find out otherwise, that along with my musings is what I'll be posting in this blog.
 
+You can contact me through [Email](mailto:erick.romero.dev@gmail.com), [LinkedIn](https://www.linkedin.com/in/erick5) or just check out my [Github](https://github.com/Zyst).
+
 <hr />
 
 ## Portfolio
 <div id="gridfolio"></div>
-
-<footer>
-    <hr />
-
-    <div class="footer-icons">
-        <a href="mailto:erick.romero.dev@gmail.com"><i class="fa fa-envelope-square"></i></a>
-        <a href="https://www.linkedin.com/in/erick5" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-        <a href="https://github.com/Zyst" target="_blank"><i class="fa fa-github-square"></i></a>
-    </div>
-</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" type="text/javascript"></script>
 <script src="../assets/gridfolio/index.js" type="text/javascript"></script>
