@@ -23,7 +23,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    color: #444;
+    color: $text-color;
 }
 
 .site-nav {
@@ -32,7 +32,7 @@
 
 
     .page-link {
-        color: #444;
+        color: $text-color;
 
         &:hover {
             color: $brand-color-dark;
@@ -190,7 +190,7 @@
 .home  a {
     font-family: $base-font-family;
     font-size: 36px;
-    color: #444;
+    color: $text-color;
     padding: 10px;
 }
 
