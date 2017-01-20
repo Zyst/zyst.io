@@ -156,10 +156,10 @@
 
     .highlight {
         font-family: $code-font-family;
-        color: #333;
+        color: $code-color;
         z-index: -1;
         background: $code-and-home-background;
-        border: 0.063em solid #dedede;
+        border: 0.063em solid $code-border;
         border-right: 0em solid #fff;
         line-height: 1.5em;
         padding-top: 1em;

@@ -154,13 +154,12 @@ blockquote {
     }
 }
 
-
 pre {
     max-width: 540px;
     display: block;
     font-size: 0.875em;
     font-family: $code-font-family;
-    color: #333333;
+    color: $code-color;
     line-height: 1.3em;
     margin: 0px auto;
     padding: 0 10px;
