@@ -82,7 +82,7 @@
  */
 .post-header {
     font-family: $base-font-family;
-    color: #373737;
+    color: $text-color;
     max-width: 540px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -101,7 +101,7 @@
 
 .post-content {
     font-family: $base-font-family;
-    color: #373737;
+    color: $text-color;
     margin-bottom: $spacing-unit;
 
     p {
