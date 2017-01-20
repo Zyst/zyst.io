@@ -4,7 +4,7 @@
 .site-header {
     font-family: $base-font-family;
     min-height: 56px;
-    max-width: 940px;
+    max-width: $wide-content;
     margin: 0 auto;
     padding: 0 10px;
     // Positioning context for the mobile navigation icon
@@ -219,7 +219,7 @@
     max-width: $content-width;
     margin: auto;
     @media (min-width: 1000px) {
-        max-width: 960px;
+        max-width: $wide-content;
     }
 }
 

@@ -59,7 +59,7 @@ figure > a > img {
     padding: 0px 0px;
     margin: 0 auto;
     @media (min-width: 1000px) {
-        max-width: 960px;
+        max-width: $wide-content;
     }
 }
 
@@ -72,7 +72,7 @@ figure > a {
     max-width: 95%;
     margin: 0 auto;
     @media (min-width: 1000px) {
-        max-width: 960px;
+        max-width: $wide-content;
     }
 }
 
@@ -84,7 +84,7 @@ figcaption {
     line-height: 26px;
     margin-bottom: 20px;
     @media (min-width: 1000px) {
-        width: 960px;
+        width: $wide-content;
     }
 }
 
