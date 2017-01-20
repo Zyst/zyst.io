@@ -59,7 +59,6 @@ var gf_content = [
   ],
   [ // row
     { // block
-      title: "Addendas",
       imageURL: "../assets/images/portfolio/Addenda.png",
       keywords: ["JavaScript", "AngularJS", "XML", "Financial"],
       style: {
