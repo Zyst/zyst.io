@@ -19,11 +19,12 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: normal;
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
     word-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -109,7 +110,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: normal;
 }
 
 
@@ -118,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #0091EA;
+    color: $brand-color;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -126,7 +127,7 @@ a {
     -webkit-text-size-adjust: 100%;
 
     &:hover {
-        color: #0071B8;
+        color: $brand-color-dark;
         transition: color .25s;
     }
 }
@@ -140,40 +141,39 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
     }
-    
+
     p {
-        border-left: .3rem solid #0091EA;
+        border-left: .3rem solid $brand-color;
     }
 }
 
 
 pre {
-    font-family: 'Open Sans', sans-serif;
     max-width: 540px;
     display: block;
     font-size: 0.875em;
-    font-family: Menlo, Monospace, Consolas;
-    color: #333;
+    font-family: $code-font-family;
+    color: #333333;
     line-height: 1.3em;
     margin: 0px auto;
     padding: 0 10px;
 }
 
 code {
-    font-family: Menlo, Monospace, Consolas;
-    background: #fafafd;
+    font-family: $code-font-family;
+    background: $code-and-home-background;
     padding: 0.063em;
 }
 
 p > code {
-    border: 0.063em solid #dedede;
+    border: 0.063em solid $code-border;
 }
 
 /**
