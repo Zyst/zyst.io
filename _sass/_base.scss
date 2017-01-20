@@ -187,24 +187,6 @@ p > code {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
-
 /**
  * Separator
  */
@@ -216,12 +198,3 @@ p > code {
     margin: 0 auto;
     max-width: $content-width;
  }
-
-/**
- * Footer
- */
-footer {
-    margin: 0 auto;
-    max-width: $content-width;
-    padding-bottom: 25px;
-}
