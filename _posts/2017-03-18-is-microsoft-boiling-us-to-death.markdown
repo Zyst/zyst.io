@@ -68,5 +68,6 @@ It's quite possible it might not have been on purpose, it's not fun to assume ev
 I leave you with a quote I thought of after writing this:
 
 >Always leave a way out, unless you really want to find out how hard a man can fight when he's nothing to lose.
+>
 > Mat, The Wheel of Time
 
