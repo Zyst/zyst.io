@@ -62,3 +62,11 @@ Experts have essentially become the canaries in a coal mine, except the coal min
 Am I imagining stuff? Or is Microsoft incredibly smart for doing this?
 
 It's quite possible it might not have been on purpose, it's not fun to assume every company is out to screw you in some Machiavellian plot. It could've been pure goodwill to leave people with a way out. However, I believe the end effect doesn't change. Experts remain in relative bliss, while consumers are slowly boiled to death.
+
+[Join the Hackernews discussion](https://news.ycombinator.com/item?id=13903701)
+
+I leave you with a quote I thought of after writing this:
+
+>Always leave a way out, unless you really want to find out how hard a man can fight when he's nothing to lose.
+> Mat, The Wheel of Time
+
