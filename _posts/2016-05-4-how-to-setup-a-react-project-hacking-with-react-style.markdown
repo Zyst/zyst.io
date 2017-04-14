@@ -5,6 +5,8 @@ description: How to setup a React project with web-dev-server, babel, and more. 
 permalink: /how-to-setup-a-react-project-hacking-with-react-style
 ---
 
+**Note**: As of 2017 this process _might_ be outdated, it will likely still work but regardless. I would strongly recommend using [Create React App](https://github.com/facebookincubator/create-react-app) instead.
+
 This guide will guide you on how to setup a project with the [http://www.hackingwithreact.com/](http://www.hackingwithreact.com/) style. If you are interested in a highly interactive learning approach to React I would highly recommend it. 
 
 You can follow along by typing the commands below by hand. Or you can go to [this repository](https://github.com/Zyst/react-hacking-with-react-kickstarter) and fork the skeleton. Although I would recommend updating the libraries in `package.json`.
