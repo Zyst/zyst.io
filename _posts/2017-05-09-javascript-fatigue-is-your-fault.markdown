@@ -1,9 +1,0 @@
----
-layout: post
-title: "JavaScript fatigue is your fault"
-description: JavaScript, and the environment isn't at fault for your fatigue. You are.
-permalink: /javascript-fatigue-is-your-fault
----
-
-The 
-
