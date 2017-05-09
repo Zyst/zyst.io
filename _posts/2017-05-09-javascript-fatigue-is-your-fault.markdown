@@ -5,5 +5,5 @@ description: JavaScript, and the environment isn't at fault for your fatigue. Yo
 permalink: /javascript-fatigue-is-your-fault
 ---
 
-
+The 
 
