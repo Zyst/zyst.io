@@ -4,7 +4,6 @@ title: "Is Microsoft boiling the users to death, by not boiling the experts?"
 description: Like the proverbial frog. Is Microsoft slowly boiling its users to death by giving experts a way out?
 permalink: /is-microsoft-boiling-us-to-death
 ---
-## Yes
 You are an "expert", a so-called power-user. You rolled your eyes at the headline, said "dumb ass", and thought about moving on.
 
 Hear me out for a minute. And by a minute I mean like three, until I get around to making my point.
