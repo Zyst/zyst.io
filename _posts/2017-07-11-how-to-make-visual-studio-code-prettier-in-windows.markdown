@@ -39,9 +39,9 @@ You can do so by adding the following to your `settings.json`:
 }
 {% endhighlight %}
 
-I like using toggle there, if you press alt it will open and you can use it. If you want it gone for good, by setting the option to `"hidden"` instead of `"toggle"`.
+I like using toggle there, if you press alt it will open and you can use it. If you want it gone for good, you can do so by setting the option to `"hidden"` instead of `"toggle"`.
 
-Now we need to change our title bar to match our theme. First we need to know what color we want, so we're going to need the `Menu bar -> Help -> Toggle developer tools`, hope you set that to toggle, otherwise here's a good reason to do so!
+Now we need to change our title bar to match our theme. First we need to know what color we want, so we're going to need the `Menu bar -> Help -> Toggle developer tools`, hope you set the menu bar to toggle, otherwise here's a good reason to do so!
 
 <figure>
   <a href="/assets/images/posts/2017-07-11-how-to-make-visual-studio-code-prettier-in-windows/developer-tools.png" target="_blank">
