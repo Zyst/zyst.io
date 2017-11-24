@@ -36,9 +36,9 @@ You can contact me through [Email](mailto:erick.romero.dev@gmail.com),
 <hr />
 
 <figure>
-  <embed src="https://wakatime.com/share/@Zyst/e2d5d619-93c6-4ef6-bca4-b7f6c21bea55.svg"></embed>
+  <embed src="https://wakatime.com/share/@Zyst/e2d5d619-93c6-4ef6-bca4-b7f6c21bea55.svg" />
 </figure>
 
 <figure>
-  <embed src="https://wakatime.com/share/@Zyst/627b08b1-ca2b-4a68-ba4f-3939fe0a15e5.svg"></embed>
+  <embed src="https://wakatime.com/share/@Zyst/627b08b1-ca2b-4a68-ba4f-3939fe0a15e5.svg" />
 </figure>
