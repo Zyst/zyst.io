@@ -32,13 +32,3 @@ You can contact me through [Email](mailto:erick.romero.dev@gmail.com),
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" type="text/javascript"></script>
 
 <script src="../assets/gridfolio/index.js" type="text/javascript"></script>
-
-<hr />
-
-<figure>
-  <embed src="https://wakatime.com/share/@Zyst/9732c34b-a86a-419f-a2ef-aa9e20cf9f07.svg" />
-</figure>
-
-<figure>
-  <embed src="https://wakatime.com/share/@Zyst/b60c7342-2d65-4966-b073-776b89511355.svg" />
-</figure>
