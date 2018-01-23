@@ -9,7 +9,7 @@ This post is meant to be a primer of sorts to aid you in the usage, and local
 development patterns of [lerna](https://github.com/lerna/lerna). I am by no
 means an expert on the topic, so some of the stuff in here will likely be
 nowhere near perfect. If you'd like to correct something feel free to go to this
-[post](https://github.com/Zyst/zyst.github.io/blob/master/_posts/2018-01-23-local-lerna-development-patterns%20-%20Copy%20-%20Copy.markdown),
+[post](https://github.com/Zyst/zyst.github.io/blob/master/_posts/2018-01-23-local-lerna-development-patterns.markdown)
 and make a pull request with changes.
 
 First off, if you can do so then having all of your dependencies under a single
