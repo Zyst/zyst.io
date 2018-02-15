@@ -60,18 +60,14 @@ First, go to the root of `another-library-from-our-friends`, where
 `package.json` is located. Once there we will type `npm link`. This will create
 a symlink to our global `node_modules` folder.
 
-We then go back to `our-awesome-server-utilities`, and once there we add the
-`our-awesome-server-utilities` as a dependency. And we then proceed to write
+We then go back to `our-awesome-server`, and once there we add
+`our-awesome-server-utilities` as a dependency. And we write
 `npm link another-library-from-our-friends`. This will install the version you
 linked on your local `node_modules` on `our-awesome-server-utilities`.
 
 This way, when we make changes in `another-library-from-our-friends` they are
 automagically reflected in `our-awesome-server-utilities`. You can now develop
 with agility, huzzah!
-
-This is the only pattern I've found that works everywhere, all kinds of weird
-stuff happens if you use symlinks on Windows, but it might be worth a shot on
-Unix.
 
 ### Using canary versions
 
