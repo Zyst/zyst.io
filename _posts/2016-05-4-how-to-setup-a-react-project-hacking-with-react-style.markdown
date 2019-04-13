@@ -5,7 +5,7 @@ description: How to setup a React project with web-dev-server, babel, and more. 
 permalink: /how-to-setup-a-react-project-hacking-with-react-style
 ---
 
-**Note**: As of 2017 this process _might_ be outdated, it will likely still work but regardless. I would strongly recommend using [Create React App](https://github.com/facebookincubator/create-react-app) instead.
+**Note**: As of 2017 this process is super outdated, it will likely still work but regardless. I would strongly recommend using [Create React App](https://github.com/facebookincubator/create-react-app) instead.
 
 This guide will guide you on how to setup a project with the [http://www.hackingwithreact.com/](http://www.hackingwithreact.com/) style. If you are interested in a highly interactive learning approach to React I would highly recommend it. 
 
@@ -15,7 +15,7 @@ Without further ado, lets begin!
 
 For our base setup just run these commands:
 
-{% highlight bash %}
+```shell
 mkdir project-name
 
 cd project-name
@@ -27,11 +27,11 @@ mkdir __tests__
 mkdir src
 
 mkdir dist
-{% endhighlight %}
+```
 
 Then copy and paste this into your Terminal:
 
-{% highlight bash %}
+```shell
 npm install --save-dev webpack webpack-dev-server react-hot-loader &&
 npm install --save-dev babel-core babel-loader &&
 npm install --save-dev babel-preset-es2015 babel-preset-react &&
@@ -39,12 +39,12 @@ npm install --save react react-dom history react-router &&
 npm install -g webpack webpack-dev-server &&
 npm install --save-dev jest-cli babel-jest react-addons-test-utils &&
 npm install --save-dev eslint-config-airbnb
-{% endhighlight %}
+```
 
 Open **package.json** and make it look like this by replacing and adding `scripts`, `babel`, and `jest`, but I would recommend keeping the updated library versions:
 
 **package.json**
-{% highlight json %}
+```json
 {
   "name": "react-hacking-with-react-kickstarter",
   "version": "1.0.0",
@@ -104,12 +104,12 @@ Open **package.json** and make it look like this by replacing and adding `script
     "react-router": "^2.4.0"
   }
 }
-{% endhighlight %}
+```
 
 Now create a file in root called **webpack.config.js** and fill it with this:
 
 **webpack.config.js**
-{% highlight js %}
+```js
 var webpack = require('webpack');
 
 module.exports = {
@@ -141,12 +141,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ]
 };
-{% endhighlight %}
+```
 
 Create **.eslintrc** file in your root folder and add the following information:
 
 **.eslintrc**
-{% highlight json %}
+```json
 {
     "parser": "babel-eslint",
     "env": {
@@ -158,12 +158,12 @@ Create **.eslintrc** file in your root folder and add the following information:
         "quotes": [2, "single"]
     }
 }
-{% endhighlight %}
+```
 
 Create **index.html** inside of the `dist` directory:
 
 **index.html**
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -175,13 +175,13 @@ Create **index.html** inside of the `dist` directory:
         <script src="bundle.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Create **index.js** inside of the `src` folder:
 
 **index.js**
-{% highlight js %}
+```js
 console.log('JS is working!')
-{% endhighlight %}
+```
 
 And your skeleton is done! Now you can get started writting Tests in your `__test__` directory and running them with `npm run test`, you can run your site by typing `webpack-dev-server`, and you can run `eslint` by typing `npm run lint`. Enjoy!

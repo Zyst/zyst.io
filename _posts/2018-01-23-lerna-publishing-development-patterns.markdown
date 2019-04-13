@@ -38,10 +38,10 @@ If you need to publish versions for testing add the
 [--canary](https://github.com/lerna/lerna#--canary--c) flag to your
 `lerna publish` with an optional flag, ie:
 
-{% highlight sh %}
+```shell
 $ lerna publish --canary
 $ lerna publish --canary=beta
-{% endhighlight %}
+```
 
 This will let you create a lot of versions for testing without having to worry
 about breaking changes.

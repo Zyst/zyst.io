@@ -33,11 +33,11 @@ First you are going to want to turn the menu bar off. This thing:
 
 You can do so by adding the following to your `settings.json`:
 
-{% highlight json %}
+```json
 {
   "window.menuBarVisibility": "toggle"
 }
-{% endhighlight %}
+```
 
 I like using toggle there, if you press alt it will open and you can use it. If you want it gone for good, you can do so by setting the option to `"hidden"` instead of `"toggle"`.
 

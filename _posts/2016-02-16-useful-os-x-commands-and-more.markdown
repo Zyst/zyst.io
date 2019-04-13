@@ -27,11 +27,11 @@ The two above have puush auto hooks.
 
 You can recursively take ownership of a folder (Get read/write) by using the following two commands:
 
-{% highlight bash %}
+```bash
 chmod -R 777 /Users/Test/Desktop/PATH
 
 chflags -R nouchg /PATH/TO/DIRECTORY/WITH/LOCKED/FILES/
-{% endhighlight %}
+```
 
 The `chmod` first gives you read/write permissions on the folder and children. The second one removes the OS X 'Locked' flag which wouldn't let you edit files. The two above are very useful when copy-pasting something from Windows.  
 
@@ -49,41 +49,41 @@ Download Karabiner with `brew cask install karabiner` and then in settings turn 
 
 To hide a folder use the terminal and use the following command:
 
-{% highlight bash %}
+```bash
 chflags hidden /path/to/folder/
-{% endhighlight %}
+```
 
 This will hide the folder in Finder. Although you can still access it with manual traveling to route, or with your terminal.
 
 To remove the hidden flag use the following command:
 
-{% highlight bash %}
+```bash
 chflags nohidden /path/to/folder/
-{% endhighlight %}
+```
 
 ## Manually add stuff to your $PATH
 
 To manually add stuff to your system PATH use the command:
 
-{% highlight bash %}
+```bash
 nano ~/.bash_profile 
-{% endhighlight %}
+```
 
 And then manually add a line with the reference
 
-{% highlight bash %} 
+```bash
 export PATH="/Users/zyst/anaconda/bin:$PATH"
-{% endhighlight %}
+```
 
 ## Add a terminal alias
 
 To add an alias for the terminal open your `bash_profile` and add the alias after `alias name='commands'`.
 
-{% highlight bash %}
+```bash
 nano ~/.bash_profile 
 
 # NCMPCPP
 alias muse='mpd && mpdas && ncmpcpp'
-{% endhighlight %}
+```
 
 More to come soon as I keep finding them out!

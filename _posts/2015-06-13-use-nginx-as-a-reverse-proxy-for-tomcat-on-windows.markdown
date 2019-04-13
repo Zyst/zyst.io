@@ -14,7 +14,7 @@ After unzipping the file go into the `nginx/conf/nginx.conf` file and remove the
 
 **nginx.conf**
 
-{% highlight nginx %}
+```nginx
 worker_processes  1;
 events {
     worker_connections  1024;
@@ -25,7 +25,7 @@ http {
     default_type  application/octet-stream;
     include C:/path-to-nginx/nginx/conf/sites-enabled/*.conf;
 }
-{% endhighlight %}
+```
 
 Note the `path-to-nginx` above, make sure to replace that with the actual path to your nginx folder.
 
@@ -33,7 +33,7 @@ After that create a folder called `sites-enabled` in `nginx/conf/sites-enabled`.
 
 **erick-romero.conf**
 
-{% highlight nginx %}
+```nginx
 server {
     server_name  erick-romero.com;
 
@@ -44,7 +44,7 @@ server {
         proxy_pass http://localhost:8080;
     }
 }
-{% endhighlight %}
+```
 
 Inside the above file make sure you change your `server_name` to your domain name and `http://localhost:8080` to use the port you use on your Tomcat application, then deploy your Tomcat application.
 

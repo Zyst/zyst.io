@@ -17,7 +17,7 @@ Or you could have also run into the following error:
 
 In our case we had a recommended configuration by Amazon, and we still couldn't retrieve the images in our code. If we tried to run the code using Firefox it would work, however when we used Safari and Chrome it would not. Sound familiar? Keep reading.
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <CORSRule>
@@ -27,7 +27,7 @@ In our case we had a recommended configuration by Amazon, and we still couldn't 
         <AllowedHeader>Authorization</AllowedHeader>
     </CORSRule>
 </CORSConfiguration>
-{% endhighlight %}
+```
 
 We could embed images directly inside our html `<img>` tags and it would work `<img src="https://site.s3.amazonaws.com/bucket/some-image.png" />` however, when we tried to get the image with Javascript we would get one of the two errors mentioned above.
 
@@ -59,7 +59,7 @@ First we went into our Amazon CORS Settings, click in our bucket, select 'Proper
 
 Then we click the `Edit CORS Configuration` button and change our settings to this:
 
-{% highlight xml %}
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <CORSRule>
@@ -69,15 +69,15 @@ Then we click the `Edit CORS Configuration` button and change our settings to th
         <AllowedHeader>*</AllowedHeader>
     </CORSRule>
 </CORSConfiguration>
-{% endhighlight %}
+```
 
 Then click the `Save` button. After that you have to make sure that every URL you request from Chrome and Safari uses `http://` instead of `https://`. HTTPS retrieval will not work in these browsers at all.
 
 In our case we had Image URLs with https inside of our database, since we didn't want to change anything in our database, and AWS S3 allows both `http` and `https` requests I solved it with a small regular expression that replaced our `https` URL string with `http`.
 
-{% highlight js %}
+```js
 img.src = url.replace(/^https:\/\//i, 'http://');
-{% endhighlight %}
+```
 
 After that you will be able to get your images correctly in Chrome and Safari.
 

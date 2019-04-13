@@ -11,7 +11,7 @@ I've been reading through the book 'Scala for the Impatient', and found a partic
 
 Here's how to do it:
 
-{% highlight scala %}
+```scala
 import scala.math._
 import BigInt.probablePrime
 import scala.util.Random
@@ -23,11 +23,11 @@ val randomBigInt: BigInt = probablePrime(100, Random)
 
 // Convert it to a base 36 string
 val baseString: String = randomBigInt.toString(36)
-{% endhighlight %}
+```
 
 In the REPL it would look something like this:
 
-{% highlight console %}
+```shell
 Welcome to Scala version 2.11.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_75).
 Type in expressions to have them evaluated.
 Type :help for more information.
@@ -39,6 +39,6 @@ scala> val baseString: String = randomBigInt.toString(36)
 baseString: String = 2n4beh1ryczyb65isepz
 
 scala>
-{% endhighlight %}
+```
 
 Hope this helped, and happy learning!

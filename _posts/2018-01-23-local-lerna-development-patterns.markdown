@@ -32,13 +32,13 @@ First, let us assume we have the following scenario:
 Our `packages` has a server, and a couple of libraries we have created, and
 would like to reuse throughout development. Something like so:
 
-{% highlight sh %}
+```sh
 packages/
   our-awesome-server-utilities/
   our-awesome-library/
   another-awesome-library/
 lerna.json
-{% endhighlight %}
+```
 
 `our-awesome-server-utilities` depends on both libraries, and so far
 `lerna bootstrap` has been rocking. However, we suddenly need to add
