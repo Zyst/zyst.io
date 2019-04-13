@@ -151,7 +151,7 @@
     margin-bottom: 20px;
   }
 
-  .highlight {
+  .highlight:not(pre) {
     font-family: $code-font-family;
     color: $code-color;
     z-index: -1;
