@@ -55,3 +55,9 @@ _Reply by Crane#1195_
 Yeah, if your chair supports it lower them as much as possible.
 
 _Reply by Rohze#6853_
+
+## Do we waveland with L, or R?
+
+With L, because you can't get a long Waveland with L since Mod+L is lightshield (not full press which is needed for airdodge)
+
+_Reply by Crane#1195_
