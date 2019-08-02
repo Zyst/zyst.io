@@ -60,4 +60,12 @@ _Reply by Rohze#6853_
 
 With L, because you can't get a long Waveland with L since Mod+L is lightshield (not full press which is needed for airdodge)
 
-_Reply by Crane#1195_
+Also, Hax responded with more detail:
+
+<figure>
+  <a href="/assets/images/posts/2019-08-01-B0XX-questions/hax-waveland.png" target="_blank">
+    <img src="/assets/images/posts/2019-08-01-B0XX-questions/hax-waveland.png" alt="Hax expanding on why he lands with R" />
+  </a>
+</figure>
+
+_Reply by Crane#1195 and Hax$#9248_
