@@ -7,11 +7,12 @@ permalink: /b0xx-questions
 
 I had some questions when I got my B0XX. I figured it'd be a good idea to document the answers, so they might help someone else someday. If that's you, hope this helps!
 
-- Table of contents
-  - [Is there a way to have dolphin detect the b0xx even when tabbed out when using native controller inputs?](#is-there-a-way-to-have-dolphin-detect-the-b0xx-even-when-tabbed-out-when-using-native-controller-inputs-)
-  - [Is aerial movement meant to be done with full left/right or modifiers + left/right?](#is-aerial-movement-meant-to-be-done-with-full-left-right-or-modifiers---left-right-)
-  - [Is full dash over mod (Instead of walk) normal?](#is-full-dash-over-mod--instead-of-walk--normal-)
-  - [Do armrests suck for box?](#do-armrests-suck-for-box-)
+## Table of contents (For Ctrl + F purposes)
+
+- Is there a way to have dolphin detect the b0xx even when tabbed out when using native controller inputs?
+- Is aerial movement meant to be done with full left/right or modifiers + left/right?
+- Is full dash over mod (Instead of walk) normal?
+- Do armrests suck for box?
 
 ## Is there a way to have dolphin detect the b0xx even when tabbed out when using native controller inputs?
 
