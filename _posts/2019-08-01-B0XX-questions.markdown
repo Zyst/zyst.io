@@ -17,6 +17,8 @@ Hax said that there's pretty much no need to do modifier drifting.
   </a>
 </figure>
 
+_Reply by Hugh#0607_
+
 ## Is there a way to have dolphin detect the b0xx even when tabbed out when using native controller inputs?
 
 Yes. Under controller settings turn on background input:
@@ -26,6 +28,8 @@ Yes. Under controller settings turn on background input:
     <img src="/assets/images/posts/2019-08-01-B0XX-questions/controller-background-input.png" alt="Turning on background input over controller configuration settings" />
   </a>
 </figure>
+
+_Reply by Streamlord20XX#7778_
 
 ## Is full dash over mod (Instead of walk) normal?
 
@@ -37,6 +41,10 @@ Yes. Section 9.1 of the [Melee manual](https://drive.google.com/file/d/19N_qIS5u
   </a>
 </figure>
 
+_Reply by Crane#1195_
+
 ## Do armrests suck for box?
 
 Yeah, if your chair supports it lower them as much as possible.
+
+_Reply by Rohze#6853_
