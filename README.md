@@ -10,11 +10,6 @@ A highly minimalist blog, a heavily modified version of the amazing Jekyll theme
 
 ![Home](/assets/images/readme/home.png)
 
-**About**
-![About](/assets/images/readme/about.png)
-
-About has been updated with [Gridfolio](https://github.com/christinecha/gridfolio) by [@christinecha](https://github.com/christinecha)
-
 ### Posts
 
 ![Post](/assets/images/readme/post.png)
