@@ -11,6 +11,6 @@ result-oriented and has an excellent track record translating big, sprawling
 concepts into clean web apps. Erick has a passion for making beautiful websites
 and coding in a clean and performant fashion.
 
-You can contact me through [Email](mailto:erick.romero.dev@gmail.com),
-[LinkedIn](https://www.linkedin.com/in/erick5) or just check out my
+You can contact him through [Email](mailto:erick.romero.dev@gmail.com),
+[LinkedIn](https://www.linkedin.com/in/erick5) or find him on
 [Github](https://github.com/Zyst).
