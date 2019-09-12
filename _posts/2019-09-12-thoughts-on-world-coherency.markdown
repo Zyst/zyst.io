@@ -64,7 +64,7 @@ The market forces overall seem to balance this scale. If it tips too far in the 
 
 ## In defense of the 3D Chatroom with a combat minigame, and instances
 
-One of the parts that struck me about the document was one of the last entries, copying a part of the relevant section:
+One of the parts that stuck with me the most about the document was one of the last entries. Copying a part of the relevant section:
 
 > If you do not believe that transmog is counteractive to the MMORPG, then what you might be more interested in is a 3D chatroom with a universe and aesthetic as rich and detailed as WoW's, with some combat adventures here and there.
 
@@ -106,7 +106,7 @@ I genuinely enjoy World Consistency.
 
 Having limited resources in the world? Love it. Some of my most fond memories were walking to a limited resource, suddenly turning around, and realizing someone was going for it too say TotemZ. Activating sprint, and thus blowing a multi-minute cooldown felt fully justified when I won the limited resource. That small instance of microcompetition made the world more fun, and meaningful to me.
 
-Similarly, looking at TotemZ fighting a mob next to a harvestable item they obviously were going for, and approaching the item would make it so that you could tangibly feel their anxiety as they started blowing their cooldowns to kill the enemy faster than you getting to the resource. Getting to the resource, the mild feeling of resignation in their actions then instead of grabbing the item turning around, helping them finish off the mob, and then walking away was rewarding as hell too.
+Similarly, looking at TotemZ fighting a mob next to a harvestable item they obviously were going for, and approaching the item would make it so that you could tangibly feel their anxiety as they started blowing their cooldowns to kill the enemy faster than you getting to the resource. Getting to the resource, seeing the mild feeling of resignation, and listlessness in their actions. Then, instead of grabbing the item turning around, helping them finish off the mob, and proceeding to walk away was rewarding as hell too.
 
 Seeing TotemZ getting ganked a few minutes later, and coming to their help was truly one of the most rewarding gameplay experiences I ever experienced too. Even if we died, and even though I had screwed them over a while ago: At the end of the day we were on the same faction. We were Horde. And that was bigger than our petty squabble over a limited quest item, or mining node.
 
